@@ -1,0 +1,114 @@
+po:
+  - czas: 1
+    lekcja: "niemiecki"
+    sala: "16"
+  - czas: 2
+    lekcja: "niemiecji"
+    sala: "16"
+  - czas: 3
+    lekcja: "strony internetowe"
+    sala: "22"
+  - czas: 4
+    lekcja: "strony internetowe"
+    sala: "22"
+  - czas: 5
+    lekcja: "strony internetowe"
+    sala: "22"
+  - czas: 6
+    lekcja: "strony internetowe"
+    sala: "22"
+  - czas: 7
+    lekcja: "anielski zawodowy"
+    sala: "3C"
+wt:
+  - czas: 1
+    lekcja: "angielski"
+    sala: "2B"
+  - czas: 2
+    lekcja: "angielski"
+    sala: "2B"
+  - czas: 3
+    lekcja: "informatyka"
+    sala: "12"
+  - czas: 4
+    lekcja: "informatyka"
+    sala: "12"
+  - czas: 5
+    lekcja: "BHP"
+    sala: "up"
+  - czas: 6
+    lekcja: "biologia"
+    sala: "1C"
+  - czas: 7
+    lekcja: "EDB"
+    sala: "1C"
+  - czas: 8
+    lekcja: BHP
+    sala: "16"
+  - czas: 9
+    lekcja: "religia"
+    sala: "??"
+
+sr:
+  - czas: 1
+    lekcja: "polski"
+    sala: "10"
+  - czas: 2
+    lekcja: "fizyka"
+    sala: "1C"
+  - czas: 3
+    lekcja: "matematyka"
+    sala: "10"
+  - czas: 4
+    lekcja: "geografia"
+    sala: "23"
+  - czas: 5
+    lekcja: "proj opr"
+    sala: "17"
+  - czas: 6
+    lekcja: "bizn i zarządz"
+    sala: "1C"
+  - czas: 7
+    lekcja: "angielski zawodowy"
+    sala: "1B"
+cz:
+  - czas: 1
+    lekcja: "historia"
+    sala: "19"
+  - czas: 2
+    lekcja: "bazy danych"
+    sala: "12"
+  - czas: 3
+    lekcja: "chemia"
+    sala: "4B"
+  - czas: 4
+    lekcja: "podstawy informatyki"
+    sala: "1B"
+  - czas: 5
+    lekcja: "wychowawcza"
+    sala: "3B"
+  - czas: 6
+    lekcja: "WF"
+    sala: "SG"
+  - czas: 7
+    lekcja: "WF"
+    sala: "SG"
+  - czas: 8
+    lekcja: "WF"
+    sala: "SG"
+pi:
+  - czas: 1
+    lekcja: "polski"
+    sala: "10"
+  - czas: 2
+    lekcja: "polski"
+    sala: "10"
+  - czas: 3
+    lekcja: "matematyka"
+    sala: "18"
+  - czas: 4
+    lekcja: "matematyka"
+    sala: "18"
+  - czas: 5
+    lekcja: "angielski"
+    sala: "2C"
