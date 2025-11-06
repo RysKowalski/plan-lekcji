@@ -1,114 +1,78 @@
 po:
-  - czas: 1
-    lekcja: "niemiecki"
+  - lekcja: "niemiecki"
     sala: "16"
-  - czas: 2
-    lekcja: "niemiecji"
+  - lekcja: "niemiecji"
     sala: "16"
-  - czas: 3
-    lekcja: "strony internetowe"
+  - lekcja: "strony internetowe"
     sala: "22"
-  - czas: 4
-    lekcja: "strony internetowe"
+  - lekcja: "strony internetowe"
     sala: "22"
-  - czas: 5
-    lekcja: "strony internetowe"
+  - lekcja: "strony internetowe"
     sala: "22"
-  - czas: 6
-    lekcja: "strony internetowe"
+  - lekcja: "strony internetowe"
     sala: "22"
-  - czas: 7
-    lekcja: "anielski zawodowy"
+  - lekcja: "anielski zawodowy"
     sala: "3C"
 wt:
-  - czas: 1
-    lekcja: "angielski"
+  - lekcja: "angielski"
     sala: "2B"
-  - czas: 2
-    lekcja: "angielski"
+  - lekcja: "angielski"
     sala: "2B"
-  - czas: 3
-    lekcja: "informatyka"
+  - lekcja: "informatyka"
     sala: "12"
-  - czas: 4
-    lekcja: "informatyka"
+  - lekcja: "informatyka"
     sala: "12"
-  - czas: 5
-    lekcja: "BHP"
+  - lekcja: "BHP"
     sala: "up"
-  - czas: 6
-    lekcja: "biologia"
+  - lekcja: "biologia"
     sala: "1C"
-  - czas: 7
-    lekcja: "EDB"
+  - lekcja: "EDB"
     sala: "1C"
-  - czas: 8
-    lekcja: BHP
+  - lekcja: BHP
     sala: "16"
-  - czas: 9
-    lekcja: "religia"
+  - lekcja: "religia"
     sala: "??"
 
 sr:
-  - czas: 1
-    lekcja: "polski"
+  - lekcja: "polski"
     sala: "10"
-  - czas: 2
-    lekcja: "fizyka"
+  - lekcja: "fizyka"
     sala: "1C"
-  - czas: 3
-    lekcja: "matematyka"
+  - lekcja: "matematyka"
     sala: "10"
-  - czas: 4
-    lekcja: "geografia"
+  - lekcja: "geografia"
     sala: "23"
-  - czas: 5
-    lekcja: "proj opr"
+  - lekcja: "proj opr"
     sala: "17"
-  - czas: 6
-    lekcja: "bizn i zarządz"
+  - lekcja: "bizn i zarządz"
     sala: "1C"
-  - czas: 7
-    lekcja: "angielski zawodowy"
+  - lekcja: "angielski zawodowy"
     sala: "1B"
 cz:
-  - czas: 1
-    lekcja: "historia"
+  - lekcja: "historia"
     sala: "19"
-  - czas: 2
-    lekcja: "bazy danych"
+  - lekcja: "bazy danych"
     sala: "12"
-  - czas: 3
-    lekcja: "chemia"
+  - lekcja: "chemia"
     sala: "4B"
-  - czas: 4
-    lekcja: "podstawy informatyki"
+  - lekcja: "podstawy informatyki"
     sala: "1B"
-  - czas: 5
-    lekcja: "wychowawcza"
+  - lekcja: "wychowawcza"
     sala: "3B"
-  - czas: 6
-    lekcja: "WF"
+  - lekcja: "WF"
     sala: "SG"
-  - czas: 7
-    lekcja: "WF"
+  - lekcja: "WF"
     sala: "SG"
-  - czas: 8
-    lekcja: "WF"
+  - lekcja: "WF"
     sala: "SG"
 pi:
-  - czas: 1
-    lekcja: "polski"
+  - lekcja: "polski"
     sala: "10"
-  - czas: 2
-    lekcja: "polski"
+  - lekcja: "polski"
     sala: "10"
-  - czas: 3
-    lekcja: "matematyka"
+  - lekcja: "matematyka"
     sala: "18"
-  - czas: 4
-    lekcja: "matematyka"
+  - lekcja: "matematyka"
     sala: "18"
-  - czas: 5
-    lekcja: "angielski"
+  - lekcja: "angielski"
     sala: "2C"

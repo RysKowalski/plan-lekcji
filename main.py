@@ -30,7 +30,6 @@ def load_data() -> dict[str, list[dict[str, str]]]:
         data[key] = [
             {
                 "lekcja": elem["lekcja"],
-                "czas": LESSONS[elem["czas"]],
                 "sala": elem["sala"],
             }
             for elem in data[key]
@@ -44,7 +43,7 @@ def wizualizuj_lekcje(plan: list[dict[str, str]]) -> None:
         print("Brak lekcji do wyświetlenia.")
         return
 
-    szer_czas = max(len(elem["czas"]) for elem in plan)
+    szer_czas = 11
     szer_lekcja = max(min(len(elem["lekcja"]), 20) for elem in plan)
     szer_sala = 4
     szer_numer = 2
@@ -62,7 +61,7 @@ def wizualizuj_lekcje(plan: list[dict[str, str]]) -> None:
     print(separator)
 
     for i, elem in enumerate(plan):
-        czas = elem["czas"].ljust(szer_czas)
+        czas = LESSONS[i + 1].ljust(szer_czas)
         lekcja = elem["lekcja"][:20].ljust(szer_lekcja)
         sala = elem["sala"].ljust(4)
         numer = i
