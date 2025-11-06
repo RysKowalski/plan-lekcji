@@ -1,5 +1,10 @@
 import yaml
+from colorama import Fore, Style
+from datetime import datetime, time
+from typing import Literal
 # example lesson: [{"czas":"08:00-08:45", "lekcja":"polski"}]
+
+WeekDays = Literal["po", "wt", "sr", "cz", "pi", "so", "ni"]
 
 LESSONS: dict[int, str] = {
     1: "08:00-08:45",
@@ -13,13 +18,44 @@ LESSONS: dict[int, str] = {
     9: "15:30-16:15",
 }
 
-DAYS: list[tuple[str, str]] = [
+
+DAYS: list[tuple[WeekDays, str]] = [
     ("po", "=== PONIEDZIAŁEK ==="),
     ("wt", "====== WTOREK ======"),
     ("sr", "====== ŚRODA ======="),
     ("cz", "===== CZWARTEK ====="),
     ("pi", "====== PIĄTEK ======"),
 ]
+
+ALL_DAYS: list[WeekDays] = ["po", "wt", "sr", "cz", "pi", "so", "ni"]
+
+
+def get_current_lesson_index() -> int:
+    """Return the index of the current lesson based on current system time.
+    If no lesson is ongoing, return the next upcoming lesson index.
+    Return -1 if all lessons for the day have ended.
+    """
+    now: time = datetime.now().time()
+    lessons_sorted = sorted(
+        LESSONS.items(), key=lambda x: time.fromisoformat(x[1].split("-")[0])
+    )
+
+    for index, period in lessons_sorted:
+        start_str, end_str = period.split("-")
+        start = time.fromisoformat(start_str)
+        end = time.fromisoformat(end_str)
+
+        if start <= now <= end:
+            return index
+        if now < start:
+            return index
+
+    return -1
+
+
+def get_current_weekday() -> WeekDays:
+    day = datetime.today().weekday()
+    return ALL_DAYS[day]
 
 
 def load_data() -> dict[str, list[dict[str, str]]]:
@@ -37,7 +73,7 @@ def load_data() -> dict[str, list[dict[str, str]]]:
     return data
 
 
-def wizualizuj_lekcje(plan: list[dict[str, str]]) -> None:
+def wizualizuj_lekcje(plan: list[dict[str, str]], highlight: bool = False) -> None:
     """Wizualizuje listę lekcji w formacie tabeli w terminalu."""
     if not plan:
         print("Brak lekcji do wyświetlenia.")
@@ -65,15 +101,27 @@ def wizualizuj_lekcje(plan: list[dict[str, str]]) -> None:
         lekcja = elem["lekcja"][:20].ljust(szer_lekcja)
         sala = elem["sala"].ljust(4)
         numer = i
-        print(f"| {numer + 1} | {czas} | {lekcja} | {sala} |")
-
+        if highlight and get_current_lesson_index() == i + 1:
+            print(
+                f"{Fore.LIGHTCYAN_EX}| {Fore.BLUE}{numer + 1}{Fore.LIGHTCYAN_EX} | {Fore.GREEN}{czas}{Fore.LIGHTCYAN_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTCYAN_EX} | {Fore.GREEN}{sala}{Fore.LIGHTCYAN_EX} |"
+            )
+        else:
+            print(f"| {numer + 1} | {czas} | {lekcja} | {sala} |")
     print(separator)
 
 
-if __name__ == "__main__":
+def main():
     plan = load_data()
+    current_day: WeekDays = get_current_weekday()
 
     for day in DAYS:
+        highlight: bool = day[0] == current_day
+        if highlight:
+            print(Fore.LIGHTCYAN_EX, end="")
         print(day[1])
-        wizualizuj_lekcje(plan[day[0]])
-        print()
+        wizualizuj_lekcje(plan[day[0]], highlight)
+        print(Style.RESET_ALL)
+
+
+if __name__ == "__main__":
+    main()
