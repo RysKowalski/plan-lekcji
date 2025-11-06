@@ -103,7 +103,7 @@ def wizualizuj_lekcje(plan: list[dict[str, str]], highlight: bool = False) -> No
         numer = i
         if highlight and get_current_lesson_index() == i + 1:
             print(
-                f"{Fore.LIGHTCYAN_EX}| {Fore.BLUE}{numer + 1}{Fore.LIGHTCYAN_EX} | {Fore.GREEN}{czas}{Fore.LIGHTCYAN_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTCYAN_EX} | {Fore.GREEN}{sala}{Fore.LIGHTCYAN_EX} |"
+                f"{Fore.LIGHTRED_EX}| {Fore.BLUE}{numer + 1}{Fore.LIGHTRED_EX} | {Fore.GREEN}{czas}{Fore.LIGHTRED_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTRED_EX} | {Fore.GREEN}{sala}{Fore.LIGHTRED_EX} |{Fore.LIGHTCYAN_EX}"
             )
         else:
             print(f"| {numer + 1} | {czas} | {lekcja} | {sala} |")
