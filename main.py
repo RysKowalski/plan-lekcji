@@ -20,11 +20,11 @@ LESSONS: dict[int, str] = {
 
 
 DAYS: list[tuple[WeekDays, str]] = [
-    ("po", "=== PONIEDZIAŁEK ==="),
-    ("wt", "====== WTOREK ======"),
-    ("sr", "====== ŚRODA ======="),
-    ("cz", "===== CZWARTEK ====="),
-    ("pi", "====== PIĄTEK ======"),
+    ("po", "====== PONIEDZIAŁEK ======"),
+    ("wt", "========= WTOREK ========="),
+    ("sr", "========= ŚRODA =========="),
+    ("cz", "======== CZWARTEK ========"),
+    ("pi", "========= PIĄTEK ========="),
 ]
 
 ALL_DAYS: list[WeekDays] = ["po", "wt", "sr", "cz", "pi", "so", "ni"]
@@ -82,12 +82,12 @@ def wizualizuj_lekcje(plan: list[dict[str, str]], highlight: bool = False) -> No
     szer_czas = 11
     szer_lekcja = max(min(len(elem["lekcja"]), 20) for elem in plan)
     szer_sala = 4
-    szer_numer = 2
+    szer_numer = 1
 
     naglowek_czas = "CZAS".ljust(szer_czas)
     naglowek_lekcja = "LEKCJA".ljust(szer_lekcja)
     naglowek_sala = "SALA"
-    naglowek_numer = "NR"
+    naglowek_numer = "N"
     separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
 
     print(separator)
@@ -99,14 +99,14 @@ def wizualizuj_lekcje(plan: list[dict[str, str]], highlight: bool = False) -> No
     for i, elem in enumerate(plan):
         czas = LESSONS[i + 1].ljust(szer_czas)
         lekcja = elem["lekcja"][:20].ljust(szer_lekcja)
-        sala = elem["sala"].ljust(4)
-        numer = i
+        sala = f" {elem['sala']}".ljust(4)
+        numer = i + 1
         if highlight and get_current_lesson_index() == i + 1:
             print(
-                f"{Fore.LIGHTRED_EX}| {Fore.BLUE}{numer + 1}{Fore.LIGHTRED_EX} | {Fore.GREEN}{czas}{Fore.LIGHTRED_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTRED_EX} | {Fore.GREEN}{sala}{Fore.LIGHTRED_EX} |{Fore.LIGHTCYAN_EX}"
+                f"{Fore.LIGHTRED_EX}| {Fore.BLUE}{numer}{Fore.LIGHTRED_EX} | {Fore.GREEN}{czas}{Fore.LIGHTRED_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTRED_EX} | {Fore.GREEN}{sala}{Fore.LIGHTRED_EX} |{Fore.LIGHTCYAN_EX}"
             )
         else:
-            print(f"| {numer + 1} | {czas} | {lekcja} | {sala} |")
+            print(f"| {numer} | {czas} | {lekcja} | {sala} |")
     print(separator)
 
 
