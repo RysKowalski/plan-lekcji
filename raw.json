@@ -1,0 +1,2167 @@
+[
+  {
+    "Id": 3979204,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763506800000,
+      "Date": "2025-11-19",
+      "DateDisplay": "19.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-19",
+    "Room": {
+      "Id": 18,
+      "Code": "10"
+    },
+    "TimeSlot": {
+      "Id": 22,
+      "Start": "08:00",
+      "End": "08:45",
+      "Display": "08:00-08:45",
+      "Position": 1
+    },
+    "Subject": {
+      "Id": 210,
+      "Key": "4330d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język polski",
+      "Kod": "j. polski",
+      "Position": 67
+    },
+    "TeacherPrimary": {
+      "Id": 130,
+      "Surname": "Dębiec",
+      "Name": "Elżbieta",
+      "DisplayName": "Elżbieta Dębiec"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979205,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763506800000,
+      "Date": "2025-11-19",
+      "DateDisplay": "19.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-19",
+    "Room": {
+      "Id": 33,
+      "Code": "1C"
+    },
+    "TimeSlot": {
+      "Id": 23,
+      "Start": "08:55",
+      "End": "09:40",
+      "Display": "08:55-09:40",
+      "Position": 2
+    },
+    "Subject": {
+      "Id": 265,
+      "Key": "7930d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Fizyka",
+      "Kod": "fizyka",
+      "Position": 40
+    },
+    "TeacherPrimary": {
+      "Id": 72,
+      "Surname": "Ługowska",
+      "Name": "Wioleta",
+      "DisplayName": "Wioleta Ługowska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979206,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763506800000,
+      "Date": "2025-11-19",
+      "DateDisplay": "19.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-19",
+    "Room": {
+      "Id": 27,
+      "Code": "18"
+    },
+    "TimeSlot": {
+      "Id": 24,
+      "Start": "09:50",
+      "End": "10:35",
+      "Display": "09:50-10:35",
+      "Position": 3
+    },
+    "Subject": {
+      "Id": 264,
+      "Key": "7830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Matematyka",
+      "Kod": "matematyka",
+      "Position": 85
+    },
+    "TeacherPrimary": {
+      "Id": 86,
+      "Surname": "Warnowska",
+      "Name": "Marta",
+      "DisplayName": "Marta Warnowska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979207,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763506800000,
+      "Date": "2025-11-19",
+      "DateDisplay": "19.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-19",
+    "Room": {
+      "Id": 25,
+      "Code": "23"
+    },
+    "TimeSlot": {
+      "Id": 25,
+      "Start": "10:50",
+      "End": "11:35",
+      "Display": "10:50-11:35",
+      "Position": 4
+    },
+    "Subject": {
+      "Id": 270,
+      "Key": "7d30d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Geografia",
+      "Kod": "geografia",
+      "Position": 43
+    },
+    "TeacherPrimary": {
+      "Id": 295,
+      "Surname": "Wasiak",
+      "Name": "Andrzej",
+      "DisplayName": "Andrzej Wasiak"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979208,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763506800000,
+      "Date": "2025-11-19",
+      "DateDisplay": "19.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-19",
+    "Room": {
+      "Id": 21,
+      "Code": "17"
+    },
+    "TimeSlot": {
+      "Id": 26,
+      "Start": "11:45",
+      "End": "12:30",
+      "Display": "11:45-12:30",
+      "Position": 5
+    },
+    "Subject": {
+      "Id": 1147,
+      "Key": "b39f1a67-f6ae-4bc0-bc56-bf48fabd54fc",
+      "Name": "Projektowanie oprogramowania",
+      "Kod": "proj opro",
+      "Position": 190
+    },
+    "TeacherPrimary": {
+      "Id": 55,
+      "Surname": "Wojtaszek",
+      "Name": "Maciej",
+      "DisplayName": "Maciej Wojtaszek"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979210,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763506800000,
+      "Date": "2025-11-19",
+      "DateDisplay": "19.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-19",
+    "Room": {
+      "Id": 33,
+      "Code": "1C"
+    },
+    "TimeSlot": {
+      "Id": 27,
+      "Start": "12:40",
+      "End": "13:25",
+      "Display": "12:40-13:25",
+      "Position": 6
+    },
+    "Subject": {
+      "Id": 2570,
+      "Key": "7cd0743c-f20a-ee11-9ab2-00155d0e3942",
+      "Name": "Biznes i zarządzanie",
+      "Kod": "BiZ",
+      "Position": 1000
+    },
+    "TeacherPrimary": {
+      "Id": 69,
+      "Surname": "Kolasińska - Burska",
+      "Name": "Magdalena",
+      "DisplayName": "Magdalena Kolasińska - Burska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979211,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763506800000,
+      "Date": "2025-11-19",
+      "DateDisplay": "19.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-19",
+    "Room": {
+      "Id": 29,
+      "Code": "1B"
+    },
+    "TimeSlot": {
+      "Id": 28,
+      "Start": "13:40",
+      "End": "14:25",
+      "Display": "13:40-14:25",
+      "Position": 7
+    },
+    "Subject": {
+      "Id": 436,
+      "Key": "2f7ad02b-e288-4210-a1ef-d3ce311d52ec",
+      "Name": "Język obcy zawodowy",
+      "Kod": "Joz",
+      "Position": 66
+    },
+    "TeacherPrimary": {
+      "Id": 300,
+      "Surname": "Prośniak",
+      "Name": "Anna",
+      "DisplayName": "Anna Prośniak"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979360,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 26,
+      "Code": "19"
+    },
+    "TimeSlot": {
+      "Id": 22,
+      "Start": "08:00",
+      "End": "08:45",
+      "Display": "08:00-08:45",
+      "Position": 1
+    },
+    "Subject": {
+      "Id": 256,
+      "Key": "7030d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Historia",
+      "Kod": "historia",
+      "Position": 50
+    },
+    "TeacherPrimary": {
+      "Id": 94,
+      "Surname": "Białkowska - Pietrzak",
+      "Name": "Anna",
+      "DisplayName": "Anna Białkowska - Pietrzak"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979361,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 28,
+      "Code": "12"
+    },
+    "TimeSlot": {
+      "Id": 23,
+      "Start": "08:55",
+      "End": "09:40",
+      "Display": "08:55-09:40",
+      "Position": 2
+    },
+    "Subject": {
+      "Id": 1148,
+      "Key": "c3e7a733-892b-487d-aa26-245235950c05",
+      "Name": "Projektowanie i administrowanie bazami danych",
+      "Kod": "p i adm bd",
+      "Position": 187
+    },
+    "TeacherPrimary": {
+      "Id": 53,
+      "Surname": "Susik",
+      "Name": "Tomasz",
+      "DisplayName": "Tomasz Susik"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979362,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 32,
+      "Code": "4B"
+    },
+    "TimeSlot": {
+      "Id": 24,
+      "Start": "09:50",
+      "End": "10:35",
+      "Display": "09:50-10:35",
+      "Position": 3
+    },
+    "Subject": {
+      "Id": 267,
+      "Key": "7a30d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Chemia",
+      "Kod": "chemia",
+      "Position": 12
+    },
+    "TeacherPrimary": {
+      "Id": 91,
+      "Surname": "Wasilewska",
+      "Name": "Magdalena",
+      "DisplayName": "Magdalena Wasilewska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979363,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 29,
+      "Code": "1B"
+    },
+    "TimeSlot": {
+      "Id": 25,
+      "Start": "10:50",
+      "End": "11:35",
+      "Display": "10:50-11:35",
+      "Position": 4
+    },
+    "Subject": {
+      "Id": 1149,
+      "Key": "c1333da1-9503-40c1-ab37-41b579f85e9d",
+      "Name": "Podstawy informatyki",
+      "Kod": "pods inf",
+      "Position": 124
+    },
+    "TeacherPrimary": {
+      "Id": 55,
+      "Surname": "Wojtaszek",
+      "Name": "Maciej",
+      "DisplayName": "Maciej Wojtaszek"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979364,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 31,
+      "Code": "3B"
+    },
+    "TimeSlot": {
+      "Id": 26,
+      "Start": "11:45",
+      "End": "12:30",
+      "Display": "11:45-12:30",
+      "Position": 5
+    },
+    "Subject": {
+      "Id": 300,
+      "Key": "9b30d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Zajęcia z wychowawcą",
+      "Kod": "zaj. wych.",
+      "Position": 251
+    },
+    "TeacherPrimary": {
+      "Id": 78,
+      "Surname": "Burchacki",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Burchacki"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979365,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 23,
+      "Code": "SG"
+    },
+    "TimeSlot": {
+      "Id": 27,
+      "Start": "12:40",
+      "End": "13:25",
+      "Display": "12:40-13:25",
+      "Position": 6
+    },
+    "Subject": {
+      "Id": 281,
+      "Key": "8830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Wychowanie fizyczne",
+      "Kod": "wf",
+      "Position": 238
+    },
+    "TeacherPrimary": {
+      "Id": 66,
+      "Surname": "Kajmers",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Kajmers"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 710,
+      "Key": "a330d8d5-6629-e611-9430-00155d5a5f15",
+      "Shortcut": "CH",
+      "Name": "Chłopiec",
+      "PartType": "płeć męska"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979366,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 23,
+      "Code": "SG"
+    },
+    "TimeSlot": {
+      "Id": 28,
+      "Start": "13:40",
+      "End": "14:25",
+      "Display": "13:40-14:25",
+      "Position": 7
+    },
+    "Subject": {
+      "Id": 281,
+      "Key": "8830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Wychowanie fizyczne",
+      "Kod": "wf",
+      "Position": 238
+    },
+    "TeacherPrimary": {
+      "Id": 66,
+      "Surname": "Kajmers",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Kajmers"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 710,
+      "Key": "a330d8d5-6629-e611-9430-00155d5a5f15",
+      "Shortcut": "CH",
+      "Name": "Chłopiec",
+      "PartType": "płeć męska"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979367,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763593200000,
+      "Date": "2025-11-20",
+      "DateDisplay": "20.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-20",
+    "Room": {
+      "Id": 23,
+      "Code": "SG"
+    },
+    "TimeSlot": {
+      "Id": 29,
+      "Start": "14:35",
+      "End": "15:20",
+      "Display": "14:35-15:20",
+      "Position": 8
+    },
+    "Subject": {
+      "Id": 281,
+      "Key": "8830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Wychowanie fizyczne",
+      "Kod": "wf",
+      "Position": 238
+    },
+    "TeacherPrimary": {
+      "Id": 66,
+      "Surname": "Kajmers",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Kajmers"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 710,
+      "Key": "a330d8d5-6629-e611-9430-00155d5a5f15",
+      "Shortcut": "CH",
+      "Name": "Chłopiec",
+      "PartType": "płeć męska"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979494,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763679600000,
+      "Date": "2025-11-21",
+      "DateDisplay": "21.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-21",
+    "Room": {
+      "Id": 18,
+      "Code": "10"
+    },
+    "TimeSlot": {
+      "Id": 22,
+      "Start": "08:00",
+      "End": "08:45",
+      "Display": "08:00-08:45",
+      "Position": 1
+    },
+    "Subject": {
+      "Id": 210,
+      "Key": "4330d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język polski",
+      "Kod": "j. polski",
+      "Position": 67
+    },
+    "TeacherPrimary": {
+      "Id": 130,
+      "Surname": "Dębiec",
+      "Name": "Elżbieta",
+      "DisplayName": "Elżbieta Dębiec"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979495,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763679600000,
+      "Date": "2025-11-21",
+      "DateDisplay": "21.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-21",
+    "Room": {
+      "Id": 18,
+      "Code": "10"
+    },
+    "TimeSlot": {
+      "Id": 23,
+      "Start": "08:55",
+      "End": "09:40",
+      "Display": "08:55-09:40",
+      "Position": 2
+    },
+    "Subject": {
+      "Id": 210,
+      "Key": "4330d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język polski",
+      "Kod": "j. polski",
+      "Position": 67
+    },
+    "TeacherPrimary": {
+      "Id": 130,
+      "Surname": "Dębiec",
+      "Name": "Elżbieta",
+      "DisplayName": "Elżbieta Dębiec"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979496,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763679600000,
+      "Date": "2025-11-21",
+      "DateDisplay": "21.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-21",
+    "Room": {
+      "Id": 27,
+      "Code": "18"
+    },
+    "TimeSlot": {
+      "Id": 24,
+      "Start": "09:50",
+      "End": "10:35",
+      "Display": "09:50-10:35",
+      "Position": 3
+    },
+    "Subject": {
+      "Id": 264,
+      "Key": "7830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Matematyka",
+      "Kod": "matematyka",
+      "Position": 85
+    },
+    "TeacherPrimary": {
+      "Id": 86,
+      "Surname": "Warnowska",
+      "Name": "Marta",
+      "DisplayName": "Marta Warnowska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979497,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763679600000,
+      "Date": "2025-11-21",
+      "DateDisplay": "21.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-21",
+    "Room": {
+      "Id": 27,
+      "Code": "18"
+    },
+    "TimeSlot": {
+      "Id": 25,
+      "Start": "10:50",
+      "End": "11:35",
+      "Display": "10:50-11:35",
+      "Position": 4
+    },
+    "Subject": {
+      "Id": 264,
+      "Key": "7830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Matematyka",
+      "Kod": "matematyka",
+      "Position": 85
+    },
+    "TeacherPrimary": {
+      "Id": 86,
+      "Surname": "Warnowska",
+      "Name": "Marta",
+      "DisplayName": "Marta Warnowska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979498,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763679600000,
+      "Date": "2025-11-21",
+      "DateDisplay": "21.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-21",
+    "Room": {
+      "Id": 34,
+      "Code": "2C"
+    },
+    "TimeSlot": {
+      "Id": 26,
+      "Start": "11:45",
+      "End": "12:30",
+      "Display": "11:45-12:30",
+      "Position": 5
+    },
+    "Subject": {
+      "Id": 211,
+      "Key": "4430d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język angielski",
+      "Kod": "j. angielski",
+      "Position": 55
+    },
+    "TeacherPrimary": {
+      "Id": 73,
+      "Surname": "Małkiewicz",
+      "Name": "Mariusz",
+      "DisplayName": "Mariusz Małkiewicz"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": {
+      "Id": 175434,
+      "Type": 1,
+      "IsMerge": false,
+      "Separation": false
+    },
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": {
+      "Id": 175434,
+      "UnitId": 3,
+      "ScheduleId": 3979498,
+      "LessonDate": {
+        "Timestamp": 1763679600000,
+        "Date": "2025-11-21",
+        "DateDisplay": "21.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-21",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": null,
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": null,
+      "Subject": null,
+      "TeacherPrimary": null,
+      "TeacherAbsenceReasonId": 13,
+      "TeacherAbsenceEffectName": "Uczniowie zwolnieni do domu",
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 175434,
+        "Type": 1,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": {
+        "Id": 2842,
+        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+        "Shortcut": "PROG",
+        "Name": "Programista",
+        "PartType": "kryterium"
+      },
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1763537193620,
+        "Date": "2025-11-19",
+        "DateDisplay": "19.11.2025",
+        "Time": "08:26:33"
+      },
+      "ModifiedAt": "2025-11-19T08:26:33.6200000+01:00",
+      "Description": null
+    },
+    "Parent": null
+  },
+  {
+    "Id": 3979635,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763334000000,
+      "Date": "2025-11-17",
+      "DateDisplay": "17.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-17",
+    "Room": {
+      "Id": 20,
+      "Code": "16"
+    },
+    "TimeSlot": {
+      "Id": 22,
+      "Start": "08:00",
+      "End": "08:45",
+      "Display": "08:00-08:45",
+      "Position": 1
+    },
+    "Subject": {
+      "Id": 215,
+      "Key": "4830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język niemiecki",
+      "Kod": "j. niemiecki",
+      "Position": 62
+    },
+    "TeacherPrimary": {
+      "Id": 67,
+      "Surname": "Kępka",
+      "Name": "Anna",
+      "DisplayName": "Anna Kępka"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979636,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763334000000,
+      "Date": "2025-11-17",
+      "DateDisplay": "17.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-17",
+    "Room": {
+      "Id": 20,
+      "Code": "16"
+    },
+    "TimeSlot": {
+      "Id": 23,
+      "Start": "08:55",
+      "End": "09:40",
+      "Display": "08:55-09:40",
+      "Position": 2
+    },
+    "Subject": {
+      "Id": 215,
+      "Key": "4830d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język niemiecki",
+      "Kod": "j. niemiecki",
+      "Position": 62
+    },
+    "TeacherPrimary": {
+      "Id": 67,
+      "Surname": "Kępka",
+      "Name": "Anna",
+      "DisplayName": "Anna Kępka"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979640,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763334000000,
+      "Date": "2025-11-17",
+      "DateDisplay": "17.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-17",
+    "Room": {
+      "Id": 22,
+      "Code": "22"
+    },
+    "TimeSlot": {
+      "Id": 24,
+      "Start": "09:50",
+      "End": "10:35",
+      "Display": "09:50-10:35",
+      "Position": 3
+    },
+    "Subject": {
+      "Id": 1150,
+      "Key": "21327d6f-77af-44cc-84a2-41fd01856be0",
+      "Name": "Pracownia stron internetowych",
+      "Kod": "pracstronint",
+      "Position": 166
+    },
+    "TeacherPrimary": {
+      "Id": 88,
+      "Surname": "Świeboda",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Świeboda"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979641,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763334000000,
+      "Date": "2025-11-17",
+      "DateDisplay": "17.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-17",
+    "Room": {
+      "Id": 22,
+      "Code": "22"
+    },
+    "TimeSlot": {
+      "Id": 25,
+      "Start": "10:50",
+      "End": "11:35",
+      "Display": "10:50-11:35",
+      "Position": 4
+    },
+    "Subject": {
+      "Id": 1150,
+      "Key": "21327d6f-77af-44cc-84a2-41fd01856be0",
+      "Name": "Pracownia stron internetowych",
+      "Kod": "pracstronint",
+      "Position": 166
+    },
+    "TeacherPrimary": {
+      "Id": 88,
+      "Surname": "Świeboda",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Świeboda"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979642,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763334000000,
+      "Date": "2025-11-17",
+      "DateDisplay": "17.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-17",
+    "Room": {
+      "Id": 22,
+      "Code": "22"
+    },
+    "TimeSlot": {
+      "Id": 26,
+      "Start": "11:45",
+      "End": "12:30",
+      "Display": "11:45-12:30",
+      "Position": 5
+    },
+    "Subject": {
+      "Id": 1146,
+      "Key": "c8dd1fd3-fbe8-478a-a0c7-a5e77b1df9bb",
+      "Name": "Projektowanie i tworzenie stron internetowych",
+      "Kod": "proitwostrin",
+      "Position": 188
+    },
+    "TeacherPrimary": {
+      "Id": 88,
+      "Surname": "Świeboda",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Świeboda"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979643,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763334000000,
+      "Date": "2025-11-17",
+      "DateDisplay": "17.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-17",
+    "Room": {
+      "Id": 22,
+      "Code": "22"
+    },
+    "TimeSlot": {
+      "Id": 27,
+      "Start": "12:40",
+      "End": "13:25",
+      "Display": "12:40-13:25",
+      "Position": 6
+    },
+    "Subject": {
+      "Id": 1146,
+      "Key": "c8dd1fd3-fbe8-478a-a0c7-a5e77b1df9bb",
+      "Name": "Projektowanie i tworzenie stron internetowych",
+      "Kod": "proitwostrin",
+      "Position": 188
+    },
+    "TeacherPrimary": {
+      "Id": 88,
+      "Surname": "Świeboda",
+      "Name": "Krzysztof",
+      "DisplayName": "Krzysztof Świeboda"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979646,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763334000000,
+      "Date": "2025-11-17",
+      "DateDisplay": "17.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-17",
+    "Room": {
+      "Id": 35,
+      "Code": "3C"
+    },
+    "TimeSlot": {
+      "Id": 28,
+      "Start": "13:40",
+      "End": "14:25",
+      "Display": "13:40-14:25",
+      "Position": 7
+    },
+    "Subject": {
+      "Id": 436,
+      "Key": "2f7ad02b-e288-4210-a1ef-d3ce311d52ec",
+      "Name": "Język obcy zawodowy",
+      "Kod": "Joz",
+      "Position": 66
+    },
+    "TeacherPrimary": {
+      "Id": 300,
+      "Surname": "Prośniak",
+      "Name": "Anna",
+      "DisplayName": "Anna Prośniak"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": {
+      "Id": 174841,
+      "Type": 1,
+      "IsMerge": false,
+      "Separation": false
+    },
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": {
+      "Id": 174841,
+      "UnitId": 3,
+      "ScheduleId": 3979646,
+      "LessonDate": {
+        "Timestamp": 1763334000000,
+        "Date": "2025-11-17",
+        "DateDisplay": "17.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-17",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": null,
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": null,
+      "Subject": null,
+      "TeacherPrimary": null,
+      "TeacherAbsenceReasonId": 21,
+      "TeacherAbsenceEffectName": "Uczniowie zwolnieni do domu",
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 174841,
+        "Type": 1,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": {
+        "Id": 2842,
+        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+        "Shortcut": "PROG",
+        "Name": "Programista",
+        "PartType": "kryterium"
+      },
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1763107580440,
+        "Date": "2025-11-14",
+        "DateDisplay": "14.11.2025",
+        "Time": "09:06:20"
+      },
+      "ModifiedAt": "2025-11-14T09:06:20.4400000+01:00",
+      "Description": null
+    },
+    "Parent": null
+  },
+  {
+    "Id": 3979782,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 28,
+      "Code": "12"
+    },
+    "TimeSlot": {
+      "Id": 24,
+      "Start": "09:50",
+      "End": "10:35",
+      "Display": "09:50-10:35",
+      "Position": 3
+    },
+    "Subject": {
+      "Id": 277,
+      "Key": "8430d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Informatyka",
+      "Kod": "informatyka",
+      "Position": 53
+    },
+    "TeacherPrimary": {
+      "Id": 53,
+      "Surname": "Susik",
+      "Name": "Tomasz",
+      "DisplayName": "Tomasz Susik"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979783,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 28,
+      "Code": "12"
+    },
+    "TimeSlot": {
+      "Id": 25,
+      "Start": "10:50",
+      "End": "11:35",
+      "Display": "10:50-11:35",
+      "Position": 4
+    },
+    "Subject": {
+      "Id": 277,
+      "Key": "8430d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Informatyka",
+      "Kod": "informatyka",
+      "Position": 53
+    },
+    "TeacherPrimary": {
+      "Id": 53,
+      "Surname": "Susik",
+      "Name": "Tomasz",
+      "DisplayName": "Tomasz Susik"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979784,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": null,
+    "TimeSlot": {
+      "Id": 26,
+      "Start": "11:45",
+      "End": "12:30",
+      "Display": "11:45-12:30",
+      "Position": 5
+    },
+    "Subject": {
+      "Id": 519,
+      "Key": "757643e0-3d4d-4d04-bdad-968ad59c6cbc",
+      "Name": "Bezpieczeństwo i higiena pracy",
+      "Kod": "BHP",
+      "Position": 7
+    },
+    "TeacherPrimary": {
+      "Id": 82,
+      "Surname": "Kostanek",
+      "Name": "Marcin",
+      "DisplayName": "Marcin Kostanek"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979785,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 33,
+      "Code": "1C"
+    },
+    "TimeSlot": {
+      "Id": 27,
+      "Start": "12:40",
+      "End": "13:25",
+      "Display": "12:40-13:25",
+      "Position": 6
+    },
+    "Subject": {
+      "Id": 269,
+      "Key": "7c30d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Biologia",
+      "Kod": "biologia",
+      "Position": 9
+    },
+    "TeacherPrimary": {
+      "Id": 91,
+      "Surname": "Wasilewska",
+      "Name": "Magdalena",
+      "DisplayName": "Magdalena Wasilewska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979786,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 33,
+      "Code": "1C"
+    },
+    "TimeSlot": {
+      "Id": 28,
+      "Start": "13:40",
+      "End": "14:25",
+      "Display": "13:40-14:25",
+      "Position": 7
+    },
+    "Subject": {
+      "Id": 294,
+      "Key": "9530d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Edukacja dla bezpieczeństwa",
+      "Kod": "e_dla_bezp",
+      "Position": 20
+    },
+    "TeacherPrimary": {
+      "Id": 131,
+      "Surname": "Antosik",
+      "Name": "Małgorzata",
+      "DisplayName": "Małgorzata Antosik"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979787,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 20,
+      "Code": "16"
+    },
+    "TimeSlot": {
+      "Id": 29,
+      "Start": "14:35",
+      "End": "15:20",
+      "Display": "14:35-15:20",
+      "Position": 8
+    },
+    "Subject": {
+      "Id": 519,
+      "Key": "757643e0-3d4d-4d04-bdad-968ad59c6cbc",
+      "Name": "Bezpieczeństwo i higiena pracy",
+      "Kod": "BHP",
+      "Position": 7
+    },
+    "TeacherPrimary": {
+      "Id": 82,
+      "Surname": "Kostanek",
+      "Name": "Marcin",
+      "DisplayName": "Marcin Kostanek"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": null,
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979788,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 18,
+      "Code": "10"
+    },
+    "TimeSlot": {
+      "Id": 30,
+      "Start": "15:30",
+      "End": "16:15",
+      "Display": "15:30-16:15",
+      "Position": 9
+    },
+    "Subject": {
+      "Id": 207,
+      "Key": "4030d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Religia",
+      "Kod": "religia",
+      "Position": 207
+    },
+    "TeacherPrimary": {
+      "Id": 2558,
+      "Surname": "Czachorowska",
+      "Name": "Ewa",
+      "DisplayName": "Ewa Czachorowska"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": null,
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 1432,
+      "Key": "d95fa41e-39c3-42fd-a18d-450767affd78",
+      "Shortcut": "REL",
+      "Name": "Religia",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": null,
+    "Parent": null
+  },
+  {
+    "Id": 3979789,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 30,
+      "Code": "2B"
+    },
+    "TimeSlot": {
+      "Id": 22,
+      "Start": "08:00",
+      "End": "08:45",
+      "Display": "08:00-08:45",
+      "Position": 1
+    },
+    "Subject": {
+      "Id": 211,
+      "Key": "4430d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język angielski",
+      "Kod": "j. angielski",
+      "Position": 55
+    },
+    "TeacherPrimary": {
+      "Id": 73,
+      "Surname": "Małkiewicz",
+      "Name": "Mariusz",
+      "DisplayName": "Mariusz Małkiewicz"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": {
+      "Id": 175125,
+      "Type": 1,
+      "IsMerge": false,
+      "Separation": false
+    },
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": {
+      "Id": 175125,
+      "UnitId": 3,
+      "ScheduleId": 3979789,
+      "LessonDate": {
+        "Timestamp": 1763420400000,
+        "Date": "2025-11-18",
+        "DateDisplay": "18.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-18",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": null,
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": null,
+      "Subject": null,
+      "TeacherPrimary": null,
+      "TeacherAbsenceReasonId": 13,
+      "TeacherAbsenceEffectName": "Okienko dla uczniów",
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 175125,
+        "Type": 1,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": {
+        "Id": 2842,
+        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+        "Shortcut": "PROG",
+        "Name": "Programista",
+        "PartType": "kryterium"
+      },
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1763375044333,
+        "Date": "2025-11-17",
+        "DateDisplay": "17.11.2025",
+        "Time": "11:24:04"
+      },
+      "ModifiedAt": "2025-11-17T11:24:04.3330000+01:00",
+      "Description": null
+    },
+    "Parent": null
+  },
+  {
+    "Id": 3979790,
+    "MergeChangeId": null,
+    "Event": null,
+    "Date": {
+      "Timestamp": 1763420400000,
+      "Date": "2025-11-18",
+      "DateDisplay": "18.11.2025",
+      "Time": "00:00:00"
+    },
+    "DateAt": "2025-11-18",
+    "Room": {
+      "Id": 30,
+      "Code": "2B"
+    },
+    "TimeSlot": {
+      "Id": 23,
+      "Start": "08:55",
+      "End": "09:40",
+      "Display": "08:55-09:40",
+      "Position": 2
+    },
+    "Subject": {
+      "Id": 211,
+      "Key": "4430d8d5-6629-e611-9430-00155d5a5f15",
+      "Name": "Język angielski",
+      "Kod": "j. angielski",
+      "Position": 55
+    },
+    "TeacherPrimary": {
+      "Id": 73,
+      "Surname": "Małkiewicz",
+      "Name": "Mariusz",
+      "DisplayName": "Mariusz Małkiewicz"
+    },
+    "TeacherSecondary": null,
+    "TeacherSecondary2": null,
+    "Change": {
+      "Id": 175126,
+      "Type": 1,
+      "IsMerge": false,
+      "Separation": false
+    },
+    "Clazz": {
+      "Id": 790,
+      "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+      "DisplayName": "1TPI",
+      "Symbol": "TPI"
+    },
+    "Distribution": {
+      "Id": 2842,
+      "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+      "Shortcut": "PROG",
+      "Name": "Programista",
+      "PartType": "kryterium"
+    },
+    "PupilAlias": null,
+    "Visible": true,
+    "Substitution": {
+      "Id": 175126,
+      "UnitId": 3,
+      "ScheduleId": 3979790,
+      "LessonDate": {
+        "Timestamp": 1763420400000,
+        "Date": "2025-11-18",
+        "DateDisplay": "18.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-18",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": null,
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": null,
+      "Subject": null,
+      "TeacherPrimary": null,
+      "TeacherAbsenceReasonId": 13,
+      "TeacherAbsenceEffectName": "Okienko dla uczniów",
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 175126,
+        "Type": 1,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": {
+        "Id": 2842,
+        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+        "Shortcut": "PROG",
+        "Name": "Programista",
+        "PartType": "kryterium"
+      },
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1763375044333,
+        "Date": "2025-11-17",
+        "DateDisplay": "17.11.2025",
+        "Time": "11:24:04"
+      },
+      "ModifiedAt": "2025-11-17T11:24:04.3330000+01:00",
+      "Description": null
+    },
+    "Parent": null
+  }
+]
