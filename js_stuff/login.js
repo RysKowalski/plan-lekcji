@@ -50,6 +50,9 @@ async function main() {
   // 7) fetch lessons
   const resp = await heb.getChangedLessons(dateFrom, dateTo);
 
+  json = JSON.stringify(resp.Envelope, null, 2);
+  fs.writeFileSync('test.json', json, 'utf8')
+
   console.log("Response status:", resp.Status);
   console.log("Number of lessons:", resp.Envelope.length);
 
