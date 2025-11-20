@@ -35,10 +35,10 @@ async function main() {
   // 6) build date range
   const dateFrom = new Date();
   const dateTo = new Date();
-  dateTo.setDate(dateFrom.getDate() + 7);
+  dateTo.setDate(dateFrom.getDate() + 3);
 
   // 7) fetch lessons
-  const resp = await heb.getLessons(dateFrom, dateTo);
+  const resp = await heb.getChangedLessons(dateFrom, dateTo);
 
   console.log("Response status:", resp.Status);
   console.log("Number of lessons:", resp.Envelope.length);
@@ -50,6 +50,9 @@ async function main() {
     const t = ls.TeacherPrimary.DisplayName;
 
     console.log(`${d} | ${subj} | ${t} | room: ${room}`);
+    if (ls.Substitution) {
+      console.log(ls.Substitution.Change)
+    }
   }
 }
 
