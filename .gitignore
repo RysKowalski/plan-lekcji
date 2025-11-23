@@ -1,4 +1,5 @@
 keystore.json
+__pycache__/*
 package-lock.json
 node_modules
 package.json
