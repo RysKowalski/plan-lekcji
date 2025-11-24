@@ -89,14 +89,15 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
     )
     print(separator)
 
-    for i, elem in enumerate(plan):
-        czas = LESSONS[i + 1].ljust(szer_czas)
+    sorted_plan: ProcessedLessons = sorted(plan, key=lambda x: x["number"])
+    for elem in sorted_plan:
+        czas = elem["display_time"]
         lekcja = elem["lesson"][:20].ljust(szer_lekcja)
         sala = f" {elem['room']}".ljust(4)
-        numer = i + 1
+        numer = elem["number"]
         if elem["change"] == 1:
             print(Fore.RED, end="")
-        if highlight and get_current_lesson_index() == i + 1:
+        if highlight and get_current_lesson_index() == elem["number"]:
             if elem["change"] == 1:
                 print(
                     f"{Fore.RED}| {numer} | {Fore.GREEN}{czas}{Fore.RED} | {lekcja} | {sala} |{Fore.LIGHTCYAN_EX}"
