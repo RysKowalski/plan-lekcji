@@ -140,6 +140,7 @@ ProcessedLessons = list[SingleProcessedLesson]
 
 
 class SortedProcessedLessons(TypedDict):
+    last_update: str
     po: ProcessedLessons
     wt: ProcessedLessons
     sr: ProcessedLessons

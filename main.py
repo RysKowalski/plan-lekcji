@@ -3,6 +3,7 @@ from colorama import Fore, Style
 from typing import Literal
 from datetime import datetime, time
 from jsontype import ProcessedLessons, SortedProcessedLessons
+import data_things
 
 WeekDays = Literal["po", "wt", "sr", "cz", "pi"]
 

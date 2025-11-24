@@ -71,6 +71,7 @@ def sort_lessons(unsorted_lessons: ProcessedLessons) -> SortedProcessedLessons:
         "sr": [],
         "cz": [],
         "pi": [],
+        "last_update": str(datetime.now()),
     }
 
     for lesson in unsorted_lessons:
