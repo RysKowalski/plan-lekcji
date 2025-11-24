@@ -1,10 +1,10 @@
-import json
+import yaml
 from colorama import Fore, Style
-from typing import Literal
 from datetime import datetime, time
-from jsontype import ProcessedLessons, SortedProcessedLessons
+from typing import Literal
+# example lesson: [{"czas":"08:00-08:45", "lekcja":"polski"}]
 
-WeekDays = Literal["po", "wt", "sr", "cz", "pi"]
+WeekDays = Literal["po", "wt", "sr", "cz", "pi", "so", "ni"]
 
 LESSONS: dict[int, str] = {
     1: "08:00-08:45",
@@ -27,7 +27,7 @@ DAYS: list[tuple[WeekDays, str]] = [
     ("pi", "========= PIĄTEK ========="),
 ]
 
-ALL_DAYS: list[WeekDays] = ["po", "wt", "sr", "cz", "pi"]
+ALL_DAYS: list[WeekDays] = ["po", "wt", "sr", "cz", "pi", "so", "ni"]
 
 
 def get_current_lesson_index() -> int:
@@ -58,19 +58,29 @@ def get_current_weekday() -> WeekDays:
     return ALL_DAYS[day]
 
 
-def load_data() -> SortedProcessedLessons:
-    with open("lessons.json", "r") as file:
-        data: SortedProcessedLessons = json.load(file)
+def load_data() -> dict[str, list[dict[str, str]]]:
+    with open("lessons.yaml", "r") as file:
+        data: dict[str, list[dict]] = yaml.safe_load(file)
+
+    for key in data.keys():
+        data[key] = [
+            {
+                "lekcja": elem["lekcja"],
+                "sala": elem["sala"],
+            }
+            for elem in data[key]
+        ]
     return data
 
 
-def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
+def wizualizuj_lekcje(plan: list[dict[str, str]], highlight: bool = False) -> None:
+    """Wizualizuje listę lekcji w formacie tabeli w terminalu."""
     if not plan:
         print("Brak lekcji do wyświetlenia.")
         return
 
     szer_czas = 11
-    szer_lekcja = max(min(len(elem["lesson"]), 20) for elem in plan)
+    szer_lekcja = max(min(len(elem["lekcja"]), 20) for elem in plan)
     szer_sala = 4
     szer_numer = 1
 
@@ -88,8 +98,8 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
 
     for i, elem in enumerate(plan):
         czas = LESSONS[i + 1].ljust(szer_czas)
-        lekcja = elem["lesson"][:20].ljust(szer_lekcja)
-        sala = f" {elem['room']}".ljust(4)
+        lekcja = elem["lekcja"][:20].ljust(szer_lekcja)
+        sala = f" {elem['sala']}".ljust(4)
         numer = i + 1
         if highlight and get_current_lesson_index() == i + 1:
             print(
