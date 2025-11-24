@@ -91,12 +91,21 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
         lekcja = elem["lesson"][:20].ljust(szer_lekcja)
         sala = f" {elem['room']}".ljust(4)
         numer = i + 1
+        if elem["change"] == 1:
+            print(Fore.RED, end="")
         if highlight and get_current_lesson_index() == i + 1:
-            print(
-                f"{Fore.LIGHTRED_EX}| {Fore.BLUE}{numer}{Fore.LIGHTRED_EX} | {Fore.GREEN}{czas}{Fore.LIGHTRED_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTRED_EX} | {Fore.GREEN}{sala}{Fore.LIGHTRED_EX} |{Fore.LIGHTCYAN_EX}"
-            )
+            if elem["change"] == 1:
+                print(
+                    f"{Fore.RED}| {numer} | {Fore.GREEN}{czas}{Fore.RED} | {lekcja} | {sala} |{Fore.LIGHTCYAN_EX}"
+                )
+            else:
+                print(
+                    f"{Fore.LIGHTRED_EX}| {Fore.BLUE}{numer}{Fore.LIGHTRED_EX} | {Fore.GREEN}{czas}{Fore.LIGHTRED_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTRED_EX} | {Fore.GREEN}{sala}{Fore.LIGHTRED_EX} |{Fore.LIGHTCYAN_EX}"
+                )
         else:
             print(f"| {numer} | {czas} | {lekcja} | {sala} |")
+        if elem["change"] == 1:
+            print(Style.RESET_ALL, end="")
     print(separator)
 
 
