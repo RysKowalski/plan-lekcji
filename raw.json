@@ -1635,7 +1635,12 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": null,
+    "Change": {
+      "Id": 176128,
+      "Type": 1,
+      "IsMerge": false,
+      "Separation": false
+    },
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -1645,7 +1650,58 @@
     "Distribution": null,
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": null,
+    "Substitution": {
+      "Id": 176128,
+      "UnitId": 3,
+      "ScheduleId": 3980861,
+      "LessonDate": {
+        "Timestamp": 1764025200000,
+        "Date": "2025-11-25",
+        "DateDisplay": "25.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-25",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": null,
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": null,
+      "Subject": null,
+      "TeacherPrimary": null,
+      "TeacherAbsenceReasonId": 13,
+      "TeacherAbsenceEffectName": "Okienko dla uczniów",
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 176128,
+        "Type": 1,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": null,
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1764006935773,
+        "Date": "2025-11-24",
+        "DateDisplay": "24.11.2025",
+        "Time": "18:55:35"
+      },
+      "ModifiedAt": "2025-11-24T18:55:35.7730000+01:00",
+      "Description": null
+    },
     "Parent": null
   },
   {

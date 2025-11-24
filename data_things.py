@@ -44,6 +44,15 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         number = raw_lesson["TimeSlot"]["Position"]
         if raw_lesson["Room"] is not None:
             room = raw_lesson["Room"]["Code"]
+    if change == 1:
+        lesson = raw_lesson["Subject"]["Name"]
+        start_time = raw_lesson["TimeSlot"]["Start"]
+        end_time = raw_lesson["TimeSlot"]["End"]
+        display_time = raw_lesson["TimeSlot"]["Display"]
+        date = raw_lesson["DateAt"]
+        number = raw_lesson["TimeSlot"]["Position"]
+        if raw_lesson["Room"] is not None:
+            room = raw_lesson["Room"]["Code"]
 
     return {
         "lesson": lesson,
