@@ -123,6 +123,7 @@ class SingleProcessedLesson(TypedDict):
     display_time: HH:MM-HH:MM
     room: 2 letter class code, default 00
     change: 0: no change; 1: substitution; 2: deleted
+    date: RRRR-MM-DD
     """
 
     lesson: str  # 2 letters
@@ -132,7 +133,18 @@ class SingleProcessedLesson(TypedDict):
     display_time: str
     room: str
     change: int
+    date: str
 
 
 ProcessedLessons = list[SingleProcessedLesson]
+
+
+class SortedProcessedLessons(TypedDict):
+    po: ProcessedLessons
+    wt: ProcessedLessons
+    sr: ProcessedLessons
+    cz: ProcessedLessons
+    pi: ProcessedLessons
+
+
 RawData = list[SingleLesson]
