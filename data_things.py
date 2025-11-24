@@ -82,7 +82,7 @@ def sort_lessons(unsorted_lessons: ProcessedLessons) -> SortedProcessedLessons:
 
 def save_lessons(lessons: SortedProcessedLessons):
     with open("lessons.json", "w") as file:
-        json.dump(lessons, file, indent="  ")
+        json.dump(lessons, file)
 
 
 def main():

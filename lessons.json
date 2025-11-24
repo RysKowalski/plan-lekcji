@@ -1,7 +1,7 @@
 {
   "po": [
     {
-      "lesson": "J\u0119zyk niemiecki",
+      "lesson": "Język niemiecki",
       "number": 1,
       "start_time": "08:00",
       "end_time": "08:45",
@@ -11,7 +11,7 @@
       "date": "2025-11-24"
     },
     {
-      "lesson": "J\u0119zyk niemiecki",
+      "lesson": "Język niemiecki",
       "number": 2,
       "start_time": "08:55",
       "end_time": "09:40",
@@ -61,7 +61,7 @@
       "date": "2025-11-24"
     },
     {
-      "lesson": "J\u0119zyk obcy zawodowy",
+      "lesson": "Język obcy zawodowy",
       "number": 7,
       "start_time": "13:40",
       "end_time": "14:25",
@@ -93,7 +93,7 @@
       "date": "2025-11-25"
     },
     {
-      "lesson": "Bezpiecze\u0144stwo i higiena pracy",
+      "lesson": "Bezpieczeństwo i higiena pracy",
       "number": 5,
       "start_time": "11:45",
       "end_time": "12:30",
@@ -113,7 +113,7 @@
       "date": "2025-11-25"
     },
     {
-      "lesson": "Edukacja dla bezpiecze\u0144stwa",
+      "lesson": "Edukacja dla bezpieczeństwa",
       "number": 7,
       "start_time": "13:40",
       "end_time": "14:25",
@@ -123,7 +123,7 @@
       "date": "2025-11-25"
     },
     {
-      "lesson": "Bezpiecze\u0144stwo i higiena pracy",
+      "lesson": "Bezpieczeństwo i higiena pracy",
       "number": 8,
       "start_time": "14:35",
       "end_time": "15:20",
@@ -143,7 +143,7 @@
       "date": "2025-11-25"
     },
     {
-      "lesson": "J\u0119zyk angielski",
+      "lesson": "Język angielski",
       "number": 1,
       "start_time": "08:00",
       "end_time": "08:45",
@@ -153,7 +153,7 @@
       "date": "2025-11-25"
     },
     {
-      "lesson": "J\u0119zyk angielski",
+      "lesson": "Język angielski",
       "number": 2,
       "start_time": "08:55",
       "end_time": "09:40",
@@ -165,7 +165,7 @@
   ],
   "sr": [
     {
-      "lesson": "J\u0119zyk polski",
+      "lesson": "Język polski",
       "number": 1,
       "start_time": "08:00",
       "end_time": "08:45",
@@ -215,7 +215,7 @@
       "date": "2025-11-26"
     },
     {
-      "lesson": "Biznes i zarz\u0105dzanie",
+      "lesson": "Biznes i zarządzanie",
       "number": 6,
       "start_time": "12:40",
       "end_time": "13:25",
@@ -225,7 +225,7 @@
       "date": "2025-11-26"
     },
     {
-      "lesson": "J\u0119zyk obcy zawodowy",
+      "lesson": "Język obcy zawodowy",
       "number": 7,
       "start_time": "13:40",
       "end_time": "14:25",
@@ -277,7 +277,7 @@
       "date": "2025-11-27"
     },
     {
-      "lesson": "Zaj\u0119cia z wychowawc\u0105",
+      "lesson": "Zajęcia z wychowawcą",
       "number": 5,
       "start_time": "11:45",
       "end_time": "12:30",
@@ -319,7 +319,7 @@
   ],
   "pi": [
     {
-      "lesson": "J\u0119zyk polski",
+      "lesson": "Język polski",
       "number": 1,
       "start_time": "08:00",
       "end_time": "08:45",
@@ -329,7 +329,7 @@
       "date": "2025-11-28"
     },
     {
-      "lesson": "J\u0119zyk polski",
+      "lesson": "Język polski",
       "number": 2,
       "start_time": "08:55",
       "end_time": "09:40",
@@ -359,7 +359,7 @@
       "date": "2025-11-28"
     },
     {
-      "lesson": "J\u0119zyk angielski",
+      "lesson": "Język angielski",
       "number": 5,
       "start_time": "11:45",
       "end_time": "12:30",
@@ -369,5 +369,5 @@
       "date": "2025-11-28"
     }
   ],
-  "last_update": "2025-11-24 13:16:49.302572"
+  "last_update": "2025-48"
 }

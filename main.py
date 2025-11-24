@@ -1,9 +1,11 @@
 import json
+import os
 from colorama import Fore, Style
 from typing import Literal
 from datetime import datetime, time
 from jsontype import ProcessedLessons, SortedProcessedLessons
-import data_things
+from run_periodic import run_once_per_week
+from data_things import main as update_data
 
 WeekDays = Literal["po", "wt", "sr", "cz", "pi"]
 
@@ -21,11 +23,11 @@ LESSONS: dict[int, str] = {
 
 
 DAYS: list[tuple[WeekDays, str]] = [
-    ("po", "====== PONIEDZIAŁEK ======"),
-    ("wt", "========= WTOREK ========="),
-    ("sr", "========= ŚRODA =========="),
-    ("cz", "======== CZWARTEK ========"),
-    ("pi", "========= PIĄTEK ========="),
+    ("po", f"{'=' * 17} PONIEDZIAŁEK {'=' * 18}"),
+    ("wt", f"{'=' * 21} WTOREK {'=' * 20}"),
+    ("sr", f"{'=' * 21} ŚRODA {'=' * 21}"),
+    ("cz", f"{'=' * 20} CZWARTEK {'=' * 19}"),
+    ("pi", f"{'=' * 21} PIĄTEK {'=' * 20}"),
 ]
 
 ALL_DAYS: list[WeekDays] = ["po", "wt", "sr", "cz", "pi"]
@@ -71,7 +73,7 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
         return
 
     szer_czas = 11
-    szer_lekcja = max(min(len(elem["lesson"]), 20) for elem in plan)
+    szer_lekcja = 20
     szer_sala = 4
     szer_numer = 1
 
@@ -116,12 +118,14 @@ def main():
 
     for day in DAYS:
         highlight: bool = day[0] == current_day
+        print(Fore.LIGHTYELLOW_EX, day[1], Style.RESET_ALL, sep="")
         if highlight:
             print(Fore.LIGHTCYAN_EX, end="")
-        print(day[1])
         wizualizuj_lekcje(plan[day[0]], highlight)
         print(Style.RESET_ALL)
 
 
 if __name__ == "__main__":
+    run_once_per_week(update_data)
+    os.system("clear")
     main()
