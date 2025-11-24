@@ -1,15 +1,15 @@
 [
   {
-    "Id": 3979204,
+    "Id": 3980280,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763506800000,
-      "Date": "2025-11-19",
-      "DateDisplay": "19.11.2025",
+      "Timestamp": 1764111600000,
+      "Date": "2025-11-26",
+      "DateDisplay": "26.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-19",
+    "DateAt": "2025-11-26",
     "Room": {
       "Id": 18,
       "Code": "10"
@@ -50,16 +50,16 @@
     "Parent": null
   },
   {
-    "Id": 3979205,
+    "Id": 3980281,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763506800000,
-      "Date": "2025-11-19",
-      "DateDisplay": "19.11.2025",
+      "Timestamp": 1764111600000,
+      "Date": "2025-11-26",
+      "DateDisplay": "26.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-19",
+    "DateAt": "2025-11-26",
     "Room": {
       "Id": 33,
       "Code": "1C"
@@ -100,16 +100,16 @@
     "Parent": null
   },
   {
-    "Id": 3979206,
+    "Id": 3980282,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763506800000,
-      "Date": "2025-11-19",
-      "DateDisplay": "19.11.2025",
+      "Timestamp": 1764111600000,
+      "Date": "2025-11-26",
+      "DateDisplay": "26.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-19",
+    "DateAt": "2025-11-26",
     "Room": {
       "Id": 27,
       "Code": "18"
@@ -150,16 +150,16 @@
     "Parent": null
   },
   {
-    "Id": 3979207,
+    "Id": 3980283,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763506800000,
-      "Date": "2025-11-19",
-      "DateDisplay": "19.11.2025",
+      "Timestamp": 1764111600000,
+      "Date": "2025-11-26",
+      "DateDisplay": "26.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-19",
+    "DateAt": "2025-11-26",
     "Room": {
       "Id": 25,
       "Code": "23"
@@ -200,16 +200,16 @@
     "Parent": null
   },
   {
-    "Id": 3979208,
+    "Id": 3980284,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763506800000,
-      "Date": "2025-11-19",
-      "DateDisplay": "19.11.2025",
+      "Timestamp": 1764111600000,
+      "Date": "2025-11-26",
+      "DateDisplay": "26.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-19",
+    "DateAt": "2025-11-26",
     "Room": {
       "Id": 21,
       "Code": "17"
@@ -256,16 +256,16 @@
     "Parent": null
   },
   {
-    "Id": 3979210,
+    "Id": 3980286,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763506800000,
-      "Date": "2025-11-19",
-      "DateDisplay": "19.11.2025",
+      "Timestamp": 1764111600000,
+      "Date": "2025-11-26",
+      "DateDisplay": "26.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-19",
+    "DateAt": "2025-11-26",
     "Room": {
       "Id": 33,
       "Code": "1C"
@@ -306,16 +306,16 @@
     "Parent": null
   },
   {
-    "Id": 3979211,
+    "Id": 3980287,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763506800000,
-      "Date": "2025-11-19",
-      "DateDisplay": "19.11.2025",
+      "Timestamp": 1764111600000,
+      "Date": "2025-11-26",
+      "DateDisplay": "26.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-19",
+    "DateAt": "2025-11-26",
     "Room": {
       "Id": 29,
       "Code": "1B"
@@ -362,16 +362,16 @@
     "Parent": null
   },
   {
-    "Id": 3979360,
+    "Id": 3980436,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 26,
       "Code": "19"
@@ -412,16 +412,16 @@
     "Parent": null
   },
   {
-    "Id": 3979361,
+    "Id": 3980437,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 28,
       "Code": "12"
@@ -468,16 +468,16 @@
     "Parent": null
   },
   {
-    "Id": 3979362,
+    "Id": 3980438,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 32,
       "Code": "4B"
@@ -518,16 +518,16 @@
     "Parent": null
   },
   {
-    "Id": 3979363,
+    "Id": 3980439,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 29,
       "Code": "1B"
@@ -568,16 +568,16 @@
     "Parent": null
   },
   {
-    "Id": 3979364,
+    "Id": 3980440,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 31,
       "Code": "3B"
@@ -618,16 +618,16 @@
     "Parent": null
   },
   {
-    "Id": 3979365,
+    "Id": 3980441,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 23,
       "Code": "SG"
@@ -674,16 +674,16 @@
     "Parent": null
   },
   {
-    "Id": 3979366,
+    "Id": 3980442,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 23,
       "Code": "SG"
@@ -730,16 +730,16 @@
     "Parent": null
   },
   {
-    "Id": 3979367,
+    "Id": 3980443,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763593200000,
-      "Date": "2025-11-20",
-      "DateDisplay": "20.11.2025",
+      "Timestamp": 1764198000000,
+      "Date": "2025-11-27",
+      "DateDisplay": "27.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-20",
+    "DateAt": "2025-11-27",
     "Room": {
       "Id": 23,
       "Code": "SG"
@@ -786,16 +786,16 @@
     "Parent": null
   },
   {
-    "Id": 3979494,
+    "Id": 3980570,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763679600000,
-      "Date": "2025-11-21",
-      "DateDisplay": "21.11.2025",
+      "Timestamp": 1764284400000,
+      "Date": "2025-11-28",
+      "DateDisplay": "28.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-21",
+    "DateAt": "2025-11-28",
     "Room": {
       "Id": 18,
       "Code": "10"
@@ -836,16 +836,16 @@
     "Parent": null
   },
   {
-    "Id": 3979495,
+    "Id": 3980571,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763679600000,
-      "Date": "2025-11-21",
-      "DateDisplay": "21.11.2025",
+      "Timestamp": 1764284400000,
+      "Date": "2025-11-28",
+      "DateDisplay": "28.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-21",
+    "DateAt": "2025-11-28",
     "Room": {
       "Id": 18,
       "Code": "10"
@@ -886,16 +886,16 @@
     "Parent": null
   },
   {
-    "Id": 3979496,
+    "Id": 3980572,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763679600000,
-      "Date": "2025-11-21",
-      "DateDisplay": "21.11.2025",
+      "Timestamp": 1764284400000,
+      "Date": "2025-11-28",
+      "DateDisplay": "28.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-21",
+    "DateAt": "2025-11-28",
     "Room": {
       "Id": 27,
       "Code": "18"
@@ -936,16 +936,16 @@
     "Parent": null
   },
   {
-    "Id": 3979497,
+    "Id": 3980573,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763679600000,
-      "Date": "2025-11-21",
-      "DateDisplay": "21.11.2025",
+      "Timestamp": 1764284400000,
+      "Date": "2025-11-28",
+      "DateDisplay": "28.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-21",
+    "DateAt": "2025-11-28",
     "Room": {
       "Id": 27,
       "Code": "18"
@@ -986,16 +986,16 @@
     "Parent": null
   },
   {
-    "Id": 3979498,
+    "Id": 3980574,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763679600000,
-      "Date": "2025-11-21",
-      "DateDisplay": "21.11.2025",
+      "Timestamp": 1764284400000,
+      "Date": "2025-11-28",
+      "DateDisplay": "28.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-21",
+    "DateAt": "2025-11-28",
     "Room": {
       "Id": 34,
       "Code": "2C"
@@ -1022,12 +1022,7 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": {
-      "Id": 175434,
-      "Type": 1,
-      "IsMerge": false,
-      "Separation": false
-    },
+    "Change": null,
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -1043,77 +1038,20 @@
     },
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": {
-      "Id": 175434,
-      "UnitId": 3,
-      "ScheduleId": 3979498,
-      "LessonDate": {
-        "Timestamp": 1763679600000,
-        "Date": "2025-11-21",
-        "DateDisplay": "21.11.2025",
-        "Time": "00:00:00"
-      },
-      "DateAt": "2025-11-21",
-      "ChangeDate": null,
-      "ChangeDateAt": null,
-      "PupilNote": null,
-      "Reason": null,
-      "Event": null,
-      "Room": null,
-      "TimeSlot": null,
-      "Subject": null,
-      "TeacherPrimary": null,
-      "TeacherAbsenceReasonId": 13,
-      "TeacherAbsenceEffectName": "Uczniowie zwolnieni do domu",
-      "TeacherSecondary": null,
-      "TeacherSecondaryAbsenceReasonId": null,
-      "TeacherSecondaryAbsenceEffectName": null,
-      "TeacherSecondary2": null,
-      "TeacherSecondary2AbsenceReasonId": null,
-      "TeacherSecondary2AbsenceEffectName": null,
-      "Change": {
-        "Id": 175434,
-        "Type": 1,
-        "IsMerge": false,
-        "Separation": false
-      },
-      "Clazz": {
-        "Id": 790,
-        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
-        "DisplayName": "1TPI",
-        "Symbol": "TPI"
-      },
-      "Distribution": {
-        "Id": 2842,
-        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
-        "Shortcut": "PROG",
-        "Name": "Programista",
-        "PartType": "kryterium"
-      },
-      "ClassAbsence": false,
-      "NoRoom": false,
-      "DateModified": {
-        "Timestamp": 1763537193620,
-        "Date": "2025-11-19",
-        "DateDisplay": "19.11.2025",
-        "Time": "08:26:33"
-      },
-      "ModifiedAt": "2025-11-19T08:26:33.6200000+01:00",
-      "Description": null
-    },
+    "Substitution": null,
     "Parent": null
   },
   {
-    "Id": 3979635,
+    "Id": 3980711,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763334000000,
-      "Date": "2025-11-17",
-      "DateDisplay": "17.11.2025",
+      "Timestamp": 1763938800000,
+      "Date": "2025-11-24",
+      "DateDisplay": "24.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-17",
+    "DateAt": "2025-11-24",
     "Room": {
       "Id": 20,
       "Code": "16"
@@ -1160,16 +1098,16 @@
     "Parent": null
   },
   {
-    "Id": 3979636,
+    "Id": 3980712,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763334000000,
-      "Date": "2025-11-17",
-      "DateDisplay": "17.11.2025",
+      "Timestamp": 1763938800000,
+      "Date": "2025-11-24",
+      "DateDisplay": "24.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-17",
+    "DateAt": "2025-11-24",
     "Room": {
       "Id": 20,
       "Code": "16"
@@ -1216,16 +1154,16 @@
     "Parent": null
   },
   {
-    "Id": 3979640,
+    "Id": 3980716,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763334000000,
-      "Date": "2025-11-17",
-      "DateDisplay": "17.11.2025",
+      "Timestamp": 1763938800000,
+      "Date": "2025-11-24",
+      "DateDisplay": "24.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-17",
+    "DateAt": "2025-11-24",
     "Room": {
       "Id": 22,
       "Code": "22"
@@ -1272,16 +1210,16 @@
     "Parent": null
   },
   {
-    "Id": 3979641,
+    "Id": 3980717,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763334000000,
-      "Date": "2025-11-17",
-      "DateDisplay": "17.11.2025",
+      "Timestamp": 1763938800000,
+      "Date": "2025-11-24",
+      "DateDisplay": "24.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-17",
+    "DateAt": "2025-11-24",
     "Room": {
       "Id": 22,
       "Code": "22"
@@ -1328,16 +1266,16 @@
     "Parent": null
   },
   {
-    "Id": 3979642,
+    "Id": 3980718,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763334000000,
-      "Date": "2025-11-17",
-      "DateDisplay": "17.11.2025",
+      "Timestamp": 1763938800000,
+      "Date": "2025-11-24",
+      "DateDisplay": "24.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-17",
+    "DateAt": "2025-11-24",
     "Room": {
       "Id": 22,
       "Code": "22"
@@ -1384,16 +1322,16 @@
     "Parent": null
   },
   {
-    "Id": 3979643,
+    "Id": 3980719,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763334000000,
-      "Date": "2025-11-17",
-      "DateDisplay": "17.11.2025",
+      "Timestamp": 1763938800000,
+      "Date": "2025-11-24",
+      "DateDisplay": "24.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-17",
+    "DateAt": "2025-11-24",
     "Room": {
       "Id": 22,
       "Code": "22"
@@ -1440,16 +1378,16 @@
     "Parent": null
   },
   {
-    "Id": 3979646,
+    "Id": 3980722,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763334000000,
-      "Date": "2025-11-17",
-      "DateDisplay": "17.11.2025",
+      "Timestamp": 1763938800000,
+      "Date": "2025-11-24",
+      "DateDisplay": "24.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-17",
+    "DateAt": "2025-11-24",
     "Room": {
       "Id": 35,
       "Code": "3C"
@@ -1476,12 +1414,7 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": {
-      "Id": 174841,
-      "Type": 1,
-      "IsMerge": false,
-      "Separation": false
-    },
+    "Change": null,
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -1497,77 +1430,20 @@
     },
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": {
-      "Id": 174841,
-      "UnitId": 3,
-      "ScheduleId": 3979646,
-      "LessonDate": {
-        "Timestamp": 1763334000000,
-        "Date": "2025-11-17",
-        "DateDisplay": "17.11.2025",
-        "Time": "00:00:00"
-      },
-      "DateAt": "2025-11-17",
-      "ChangeDate": null,
-      "ChangeDateAt": null,
-      "PupilNote": null,
-      "Reason": null,
-      "Event": null,
-      "Room": null,
-      "TimeSlot": null,
-      "Subject": null,
-      "TeacherPrimary": null,
-      "TeacherAbsenceReasonId": 21,
-      "TeacherAbsenceEffectName": "Uczniowie zwolnieni do domu",
-      "TeacherSecondary": null,
-      "TeacherSecondaryAbsenceReasonId": null,
-      "TeacherSecondaryAbsenceEffectName": null,
-      "TeacherSecondary2": null,
-      "TeacherSecondary2AbsenceReasonId": null,
-      "TeacherSecondary2AbsenceEffectName": null,
-      "Change": {
-        "Id": 174841,
-        "Type": 1,
-        "IsMerge": false,
-        "Separation": false
-      },
-      "Clazz": {
-        "Id": 790,
-        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
-        "DisplayName": "1TPI",
-        "Symbol": "TPI"
-      },
-      "Distribution": {
-        "Id": 2842,
-        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
-        "Shortcut": "PROG",
-        "Name": "Programista",
-        "PartType": "kryterium"
-      },
-      "ClassAbsence": false,
-      "NoRoom": false,
-      "DateModified": {
-        "Timestamp": 1763107580440,
-        "Date": "2025-11-14",
-        "DateDisplay": "14.11.2025",
-        "Time": "09:06:20"
-      },
-      "ModifiedAt": "2025-11-14T09:06:20.4400000+01:00",
-      "Description": null
-    },
+    "Substitution": null,
     "Parent": null
   },
   {
-    "Id": 3979782,
+    "Id": 3980858,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 28,
       "Code": "12"
@@ -1614,16 +1490,16 @@
     "Parent": null
   },
   {
-    "Id": 3979783,
+    "Id": 3980859,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 28,
       "Code": "12"
@@ -1670,16 +1546,16 @@
     "Parent": null
   },
   {
-    "Id": 3979784,
+    "Id": 3980860,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": null,
     "TimeSlot": {
       "Id": 26,
@@ -1723,16 +1599,16 @@
     "Parent": null
   },
   {
-    "Id": 3979785,
+    "Id": 3980861,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 33,
       "Code": "1C"
@@ -1773,16 +1649,16 @@
     "Parent": null
   },
   {
-    "Id": 3979786,
+    "Id": 3980862,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 33,
       "Code": "1C"
@@ -1823,16 +1699,16 @@
     "Parent": null
   },
   {
-    "Id": 3979787,
+    "Id": 3980863,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 20,
       "Code": "16"
@@ -1873,16 +1749,16 @@
     "Parent": null
   },
   {
-    "Id": 3979788,
+    "Id": 3980864,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 18,
       "Code": "10"
@@ -1929,16 +1805,16 @@
     "Parent": null
   },
   {
-    "Id": 3979789,
+    "Id": 3980865,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 30,
       "Code": "2B"
@@ -1965,12 +1841,7 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": {
-      "Id": 175125,
-      "Type": 1,
-      "IsMerge": false,
-      "Separation": false
-    },
+    "Change": null,
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -1986,77 +1857,20 @@
     },
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": {
-      "Id": 175125,
-      "UnitId": 3,
-      "ScheduleId": 3979789,
-      "LessonDate": {
-        "Timestamp": 1763420400000,
-        "Date": "2025-11-18",
-        "DateDisplay": "18.11.2025",
-        "Time": "00:00:00"
-      },
-      "DateAt": "2025-11-18",
-      "ChangeDate": null,
-      "ChangeDateAt": null,
-      "PupilNote": null,
-      "Reason": null,
-      "Event": null,
-      "Room": null,
-      "TimeSlot": null,
-      "Subject": null,
-      "TeacherPrimary": null,
-      "TeacherAbsenceReasonId": 13,
-      "TeacherAbsenceEffectName": "Okienko dla uczniów",
-      "TeacherSecondary": null,
-      "TeacherSecondaryAbsenceReasonId": null,
-      "TeacherSecondaryAbsenceEffectName": null,
-      "TeacherSecondary2": null,
-      "TeacherSecondary2AbsenceReasonId": null,
-      "TeacherSecondary2AbsenceEffectName": null,
-      "Change": {
-        "Id": 175125,
-        "Type": 1,
-        "IsMerge": false,
-        "Separation": false
-      },
-      "Clazz": {
-        "Id": 790,
-        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
-        "DisplayName": "1TPI",
-        "Symbol": "TPI"
-      },
-      "Distribution": {
-        "Id": 2842,
-        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
-        "Shortcut": "PROG",
-        "Name": "Programista",
-        "PartType": "kryterium"
-      },
-      "ClassAbsence": false,
-      "NoRoom": false,
-      "DateModified": {
-        "Timestamp": 1763375044333,
-        "Date": "2025-11-17",
-        "DateDisplay": "17.11.2025",
-        "Time": "11:24:04"
-      },
-      "ModifiedAt": "2025-11-17T11:24:04.3330000+01:00",
-      "Description": null
-    },
+    "Substitution": null,
     "Parent": null
   },
   {
-    "Id": 3979790,
+    "Id": 3980866,
     "MergeChangeId": null,
     "Event": null,
     "Date": {
-      "Timestamp": 1763420400000,
-      "Date": "2025-11-18",
-      "DateDisplay": "18.11.2025",
+      "Timestamp": 1764025200000,
+      "Date": "2025-11-25",
+      "DateDisplay": "25.11.2025",
       "Time": "00:00:00"
     },
-    "DateAt": "2025-11-18",
+    "DateAt": "2025-11-25",
     "Room": {
       "Id": 30,
       "Code": "2B"
@@ -2083,12 +1897,7 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": {
-      "Id": 175126,
-      "Type": 1,
-      "IsMerge": false,
-      "Separation": false
-    },
+    "Change": null,
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -2104,64 +1913,7 @@
     },
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": {
-      "Id": 175126,
-      "UnitId": 3,
-      "ScheduleId": 3979790,
-      "LessonDate": {
-        "Timestamp": 1763420400000,
-        "Date": "2025-11-18",
-        "DateDisplay": "18.11.2025",
-        "Time": "00:00:00"
-      },
-      "DateAt": "2025-11-18",
-      "ChangeDate": null,
-      "ChangeDateAt": null,
-      "PupilNote": null,
-      "Reason": null,
-      "Event": null,
-      "Room": null,
-      "TimeSlot": null,
-      "Subject": null,
-      "TeacherPrimary": null,
-      "TeacherAbsenceReasonId": 13,
-      "TeacherAbsenceEffectName": "Okienko dla uczniów",
-      "TeacherSecondary": null,
-      "TeacherSecondaryAbsenceReasonId": null,
-      "TeacherSecondaryAbsenceEffectName": null,
-      "TeacherSecondary2": null,
-      "TeacherSecondary2AbsenceReasonId": null,
-      "TeacherSecondary2AbsenceEffectName": null,
-      "Change": {
-        "Id": 175126,
-        "Type": 1,
-        "IsMerge": false,
-        "Separation": false
-      },
-      "Clazz": {
-        "Id": 790,
-        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
-        "DisplayName": "1TPI",
-        "Symbol": "TPI"
-      },
-      "Distribution": {
-        "Id": 2842,
-        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
-        "Shortcut": "PROG",
-        "Name": "Programista",
-        "PartType": "kryterium"
-      },
-      "ClassAbsence": false,
-      "NoRoom": false,
-      "DateModified": {
-        "Timestamp": 1763375044333,
-        "Date": "2025-11-17",
-        "DateDisplay": "17.11.2025",
-        "Time": "11:24:04"
-      },
-      "ModifiedAt": "2025-11-17T11:24:04.3330000+01:00",
-      "Description": null
-    },
+    "Substitution": null,
     "Parent": null
   }
 ]

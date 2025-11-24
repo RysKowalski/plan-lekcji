@@ -1,11 +1,25 @@
 import json
-from jsontype import RawData, SingleLesson, ProcessedLessons, SingleProcessedLesson
+from datetime import datetime
+import os
+from jsontype import (
+    RawData,
+    SingleLesson,
+    ProcessedLessons,
+    SingleProcessedLesson,
+    SortedProcessedLessons,
+)
+from typing import Literal
 
 
 def load_data() -> RawData:
     with open("raw.json", "r") as file:
         data: RawData = json.load(file)
     return data
+
+
+def get_weekday(date: str) -> Literal["po", "wt", "sr", "cz", "pi"]:
+    names: list = ["po", "wt", "sr", "cz", "pi", "pi", "pi"]
+    return names[datetime.strptime(date, "%Y-%m-%d").weekday()]
 
 
 def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
@@ -22,7 +36,7 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
     date: str = "2025-01-01"
 
     if change == 0:
-        lesson = raw_lesson["Subject"]["Kod"]
+        lesson = raw_lesson["Subject"]["Name"]
         start_time = raw_lesson["TimeSlot"]["Start"]
         end_time = raw_lesson["TimeSlot"]["End"]
         display_time = raw_lesson["TimeSlot"]["Display"]
@@ -46,10 +60,34 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
 def process_data(raw_data: RawData) -> ProcessedLessons:
     processed_lessons: ProcessedLessons = []
     for raw_lesson in raw_data:
-        processed_lesson = process_lesson(raw_lesson)
+        processed_lessons.append(process_lesson(raw_lesson))
     return processed_lessons
 
 
+def sort_lessons(unsorted_lessons: ProcessedLessons) -> SortedProcessedLessons:
+    sorted_lessons: SortedProcessedLessons = {
+        "po": [],
+        "wt": [],
+        "sr": [],
+        "cz": [],
+        "pi": [],
+    }
+
+    for lesson in unsorted_lessons:
+        sorted_lessons[get_weekday(lesson["date"])].append(lesson)
+
+    return sorted_lessons
+
+
+def save_lessons(lessons: SortedProcessedLessons):
+    with open("lessons.json", "w") as file:
+        json.dump(lessons, file, indent="  ")
+
+
+def main():
+    os.system("cd js_stuff && node main.js")
+    save_lessons(sort_lessons(process_data(load_data())))
+
+
 if __name__ == "__main__":
-    data: RawData = load_data()
-    print(json.dumps(process_data(data)))
+    main()
