@@ -1,6 +1,6 @@
 import json
 import os
-from colorama import Fore, Style
+from colorama import Back, Fore, Style
 from typing import Literal
 from datetime import datetime, time
 from jsontype import Colors, Lessons, ProcessedLessons, SortedProcessedLessons
@@ -31,16 +31,6 @@ DAYS: dict[WeekDays, str] = {
 }
 
 
-# day_color: str = Fore.LIGHTYELLOW_EX,
-# base_color: str = Fore.WHITE,
-# highlight_current_day_base: str = Fore.LIGHTRED_EX,
-# highlight_base_color: str = Fore.LIGHTCYAN_EX,
-# hightlight_naglowek_color: str = Fore.WHITE,
-# highlight_number_color: str = Fore.BLUE,
-# highlight_time_color: str = Fore.GREEN,
-# highlight_lesson_color: str = Fore.BLUE,
-# highlight_room_color: str = Fore.GREEN,
-
 BASE_COLORS: Colors = {
     "base": Fore.WHITE,
     "lesson": Fore.WHITE,
@@ -48,6 +38,32 @@ BASE_COLORS: Colors = {
     "number": Fore.WHITE,
     "room": Fore.WHITE,
     "time": Fore.WHITE,
+}
+
+HIGHTLIGHT_COLORS: Colors = {
+    "base": Fore.LIGHTCYAN_EX,
+    "lesson": Fore.BLUE,
+    "naglowek": Fore.LIGHTYELLOW_EX,
+    "number": Fore.CYAN,
+    "room": Fore.LIGHTGREEN_EX,
+    "time": Fore.GREEN,
+}
+
+DELETE_MODYFIER: Colors = {
+    "base": f"{Style.DIM}{Back.RED}",
+    "lesson": f"{Style.DIM}{Back.RED}",
+    "naglowek": f"{Style.DIM}{Back.RED}",
+    "number": f"{Style.DIM}{Back.RED}",
+    "room": f"{Style.DIM}{Back.RED}",
+    "time": f"{Style.DIM}{Back.RED}",
+}
+MOVED_MODYFIER: Colors = {
+    "base": f"{Back.BLUE}",
+    "lesson": f"{Back.BLUE}",
+    "naglowek": f"{Back.BLUE}",
+    "number": f"{Back.BLUE}",
+    "room": f"{Back.BLUE}",
+    "time": f"{Back.BLUE}",
 }
 
 
