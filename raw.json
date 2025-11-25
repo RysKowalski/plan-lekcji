@@ -1791,7 +1791,12 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": null,
+    "Change": {
+      "Id": 176240,
+      "Type": 3,
+      "IsMerge": false,
+      "Separation": false
+    },
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -1801,7 +1806,64 @@
     "Distribution": null,
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": null,
+    "Substitution": {
+      "Id": 176240,
+      "UnitId": 3,
+      "ScheduleId": 3980863,
+      "LessonDate": {
+        "Timestamp": 1764025200000,
+        "Date": "2025-11-25",
+        "DateDisplay": "25.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-25",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": "",
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": {
+        "Id": 27,
+        "Start": "12:40",
+        "End": "13:25",
+        "Display": "12:40-13:25",
+        "Position": 6
+      },
+      "Subject": null,
+      "TeacherPrimary": null,
+      "TeacherAbsenceReasonId": null,
+      "TeacherAbsenceEffectName": null,
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 176240,
+        "Type": 3,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": null,
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1764059964310,
+        "Date": "2025-11-25",
+        "DateDisplay": "25.11.2025",
+        "Time": "09:39:24"
+      },
+      "ModifiedAt": "2025-11-25T09:39:24.3100000+01:00",
+      "Description": null
+    },
     "Parent": null
   },
   {

@@ -25,7 +25,7 @@ def get_weekday(date: str) -> Literal["po", "wt", "sr", "cz", "pi"]:
 def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
     change: int = 0
     if raw_lesson["Change"] is not None:
-        change = 1
+        change = raw_lesson["Change"]["Type"]
 
     number = 0
     lesson: str = "None"
@@ -53,6 +53,15 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         number = raw_lesson["TimeSlot"]["Position"]
         if raw_lesson["Room"] is not None:
             room = raw_lesson["Room"]["Code"]
+    if change == 3:
+        lesson = raw_lesson["Subject"]["Name"]
+        start_time = raw_lesson["Substitution"]["TimeSlot"]["Start"]
+        end_time = raw_lesson["Substitution"]["TimeSlot"]["End"]
+        display_time = raw_lesson["Substitution"]["TimeSlot"]["Display"]
+        date = raw_lesson["Substitution"]["DateAt"]
+        number = raw_lesson["Substitution"]["TimeSlot"]["Position"]
+        if raw_lesson["Substitution"]["Room"] is not None:
+            room = raw_lesson["Substitution"]["Room"]["Code"]
 
     return {
         "lesson": lesson,

@@ -142,10 +142,6 @@ def visualize(
     separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
 
     for day in plan.keys():
-        if not plan:
-            print("Brak lekcji do wyświetlenia.")
-            return
-
         print(separator)
         print(
             f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
