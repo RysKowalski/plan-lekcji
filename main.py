@@ -124,6 +124,9 @@ def visualize(
     highlight_base_color: str = Fore.LIGHTCYAN_EX,
     hightlight_naglowek_color: str = Fore.WHITE,
     highlight_number_color: str = Fore.BLUE,
+    highlight_time_color: str = Fore.GREEN,
+    highlight_lesson_color: str = Fore.BLUE,
+    highlight_room_color: str = Fore.GREEN,
 ):
     current_day: WeekDays = get_current_weekday()
 
