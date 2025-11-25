@@ -140,6 +140,12 @@ ProcessedLessons = list[SingleProcessedLesson]
 
 
 class Colors(TypedDict):
+    base: str
+    naglowek: str
+    number: str
+    time: str
+    lesson: str
+    room: str
 
 
 class SortedProcessedLessons(TypedDict):

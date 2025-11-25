@@ -3,7 +3,7 @@ import os
 from colorama import Fore, Style
 from typing import Literal
 from datetime import datetime, time
-from jsontype import Lessons, ProcessedLessons, SortedProcessedLessons
+from jsontype import Colors, Lessons, ProcessedLessons, SortedProcessedLessons
 from run_periodic import run_once_per_week
 from data_things import main as update_data
 
@@ -28,6 +28,26 @@ DAYS: dict[WeekDays, str] = {
     "sr": f"{'=' * 21} ŚRODA {'=' * 21}",
     "cz": f"{'=' * 20} CZWARTEK {'=' * 19}",
     "pi": f"{'=' * 21} PIĄTEK {'=' * 20}",
+}
+
+
+# day_color: str = Fore.LIGHTYELLOW_EX,
+# base_color: str = Fore.WHITE,
+# highlight_current_day_base: str = Fore.LIGHTRED_EX,
+# highlight_base_color: str = Fore.LIGHTCYAN_EX,
+# hightlight_naglowek_color: str = Fore.WHITE,
+# highlight_number_color: str = Fore.BLUE,
+# highlight_time_color: str = Fore.GREEN,
+# highlight_lesson_color: str = Fore.BLUE,
+# highlight_room_color: str = Fore.GREEN,
+
+BASE_COLORS: Colors = {
+    "base": Fore.WHITE,
+    "lesson": Fore.WHITE,
+    "naglowek": Fore.YELLOW,
+    "number": Fore.WHITE,
+    "room": Fore.WHITE,
+    "time": Fore.WHITE,
 }
 
 
@@ -116,15 +136,10 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
 
 def visualize(
     plan: SortedProcessedLessons,
-    day_color: str = Fore.LIGHTYELLOW_EX,
-    base_color: str = Fore.WHITE,
-    highlight_current_day_base: str = Fore.LIGHTRED_EX,
-    highlight_base_color: str = Fore.LIGHTCYAN_EX,
-    hightlight_naglowek_color: str = Fore.WHITE,
-    highlight_number_color: str = Fore.BLUE,
-    highlight_time_color: str = Fore.GREEN,
-    highlight_lesson_color: str = Fore.BLUE,
-    highlight_room_color: str = Fore.GREEN,
+    base_colors: Colors,
+    highlight_colors: Colors,
+    deleted_colors: Colors,
+    moved_colors: Colors,
 ):
     current_day: WeekDays = get_current_weekday()
 
@@ -165,4 +180,5 @@ if __name__ == "__main__":
     # os.system("clear")
     # main()
     lessons = load_data()
+
     visualize(lessons)
