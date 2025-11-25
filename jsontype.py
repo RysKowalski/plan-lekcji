@@ -139,6 +139,9 @@ class SingleProcessedLesson(TypedDict):
 ProcessedLessons = list[SingleProcessedLesson]
 
 
+class Colors(TypedDict):
+
+
 class SortedProcessedLessons(TypedDict):
     po: ProcessedLessons
     wt: ProcessedLessons

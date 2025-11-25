@@ -30,8 +30,6 @@ DAYS: dict[WeekDays, str] = {
     "pi": f"{'=' * 21} PIĄTEK {'=' * 20}",
 }
 
-ALL_DAYS: list[WeekDays] = ["po", "wt", "sr", "cz", "pi"]
-
 
 def get_current_lesson_index() -> int:
     """Return the index of the current lesson based on current system time.
@@ -58,7 +56,7 @@ def get_current_lesson_index() -> int:
 
 def get_current_weekday() -> WeekDays:
     day = datetime.today().weekday()
-    return ALL_DAYS[day]
+    return list(DAYS.keys())[day]
 
 
 def load_data() -> SortedProcessedLessons:
@@ -149,17 +147,17 @@ def visualize(
         print(separator)
 
 
-def main():
-    plan = load_data()
-    current_day: WeekDays = get_current_weekday()
-
-    for day in DAYS:
-        highlight: bool = day[0] == current_day
-        print(Fore.LIGHTYELLOW_EX, day[1], Style.RESET_ALL, sep="")
-        if highlight:
-            print(Fore.LIGHTCYAN_EX, end="")
-        wizualizuj_lekcje(plan[day[0]], highlight)
-        print(Style.RESET_ALL)
+# def main():
+#     plan = load_data()
+#     current_day: WeekDays = get_current_weekday()
+#
+#     for day in DAYS:
+#         highlight: bool = day[0] == current_day
+#         print(Fore.LIGHTYELLOW_EX, day[1], Style.RESET_ALL, sep="")
+#         if highlight:
+#             print(Fore.LIGHTCYAN_EX, end="")
+#         wizualizuj_lekcje(plan[day[0]], highlight)
+#         print(Style.RESET_ALL)
 
 
 if __name__ == "__main__":
