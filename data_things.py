@@ -6,7 +6,7 @@ from jsontype import (
     SingleLesson,
     ProcessedLessons,
     SingleProcessedLesson,
-    SortedProcessedLessons,
+    Lessons,
 )
 from typing import Literal
 
@@ -73,23 +73,19 @@ def process_data(raw_data: RawData) -> ProcessedLessons:
     return processed_lessons
 
 
-def sort_lessons(unsorted_lessons: ProcessedLessons) -> SortedProcessedLessons:
-    sorted_lessons: SortedProcessedLessons = {
-        "po": [],
-        "wt": [],
-        "sr": [],
-        "cz": [],
-        "pi": [],
+def sort_lessons(unsorted_lessons: ProcessedLessons) -> Lessons:
+    sorted_lessons: Lessons = {
+        "days": {"po": [], "wt": [], "sr": [], "cz": [], "pi": []},
         "last_update": str(datetime.now()),
     }
 
     for lesson in unsorted_lessons:
-        sorted_lessons[get_weekday(lesson["date"])].append(lesson)
+        sorted_lessons["days"][get_weekday(lesson["date"])].append(lesson)
 
     return sorted_lessons
 
 
-def save_lessons(lessons: SortedProcessedLessons):
+def save_lessons(lessons: Lessons):
     with open("lessons.json", "w") as file:
         json.dump(lessons, file)
 

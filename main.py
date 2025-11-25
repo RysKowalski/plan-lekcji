@@ -3,7 +3,7 @@ import os
 from colorama import Fore, Style
 from typing import Literal
 from datetime import datetime, time
-from jsontype import ProcessedLessons, SortedProcessedLessons
+from jsontype import Lessons, ProcessedLessons, SortedProcessedLessons
 from run_periodic import run_once_per_week
 from data_things import main as update_data
 
@@ -63,8 +63,8 @@ def get_current_weekday() -> WeekDays:
 
 def load_data() -> SortedProcessedLessons:
     with open("lessons.json", "r") as file:
-        data: SortedProcessedLessons = json.load(file)
-    return data
+        data: Lessons = json.load(file)
+    return data["days"]
 
 
 def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
@@ -109,8 +109,45 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
         else:
             print(f"| {numer} | {czas} | {lekcja} | {sala} |")
         if elem["change"] == 1:
-            print(Style.RESET_ALL, end="")
+            if highlight:
+                print(Fore.LIGHTCYAN_EX, end="")
+            else:
+                print(Style.RESET_ALL, end="")
     print(separator)
+
+
+def visualize(
+    plan: SortedProcessedLessons,
+    day_color: str = Fore.LIGHTYELLOW_EX,
+    base_color: str = Fore.WHITE,
+    highlight_current_day_base: str = Fore.LIGHTRED_EX,
+    highlight_base_color: str = Fore.LIGHTCYAN_EX,
+    hightlight_naglowek_color: str = Fore.WHITE,
+    highlight_number_color: str = Fore.BLUE,
+):
+    current_day: WeekDays = get_current_weekday()
+
+    szer_czas = 11
+    szer_lekcja = 20
+    szer_sala = 4
+    szer_numer = 1
+
+    naglowek_czas = "CZAS".ljust(szer_czas)
+    naglowek_lekcja = "LEKCJA".ljust(szer_lekcja)
+    naglowek_sala = "SALA"
+    naglowek_numer = "N"
+    separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
+
+    for day in plan.keys():
+        if not plan:
+            print("Brak lekcji do wyświetlenia.")
+            return
+
+        print(separator)
+        print(
+            f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
+        )
+        print(separator)
 
 
 def main():
@@ -130,3 +167,5 @@ if __name__ == "__main__":
     run_once_per_week(update_data)
     os.system("clear")
     main()
+    # lessons = load_data()
+    # visualize(lessons)
