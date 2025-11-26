@@ -31,6 +31,17 @@ DAYS: dict[WeekDays, str] = {
 }
 
 
+def rgb(
+    fg: tuple[int, int, int],
+    bg: tuple[int, int, int],
+) -> str:
+    fr, fg_, fb = fg
+    br, bg_, bb = bg
+    return f"\033[38;2;{fr};{fg_};{fb}m\033[48;2;{br};{bg_};{bb}m"
+
+
+END_MODIFIER: str = "\033[0m"
+
 BASE_COLORS: Colors = {
     "base": Fore.WHITE,
     "lesson": Fore.WHITE,
@@ -58,12 +69,12 @@ DELETE_MODYFIER: Colors = {
     "time": f"{Style.DIM}{Back.RED}",
 }
 MOVED_MODYFIER: Colors = {
-    "base": f"{Back.BLUE}",
-    "lesson": f"{Back.BLUE}",
-    "naglowek": f"{Back.BLUE}",
-    "number": f"{Back.BLUE}",
-    "room": f"{Back.BLUE}",
-    "time": f"{Back.BLUE}",
+    "base": rgb((255, 0, 0), (133, 216, 217)),
+    "lesson": rgb((255, 0, 0), (133, 216, 217)),
+    "naglowek": rgb((255, 0, 0), (133, 216, 217)),
+    "number": rgb((255, 0, 0), (133, 216, 217)),
+    "room": rgb((255, 0, 0), (133, 216, 217)),
+    "time": rgb((255, 0, 0), (133, 216, 217)),
 }
 
 
@@ -190,11 +201,9 @@ def visualize(
 #         wizualizuj_lekcje(plan[day[0]], highlight)
 #         print(Style.RESET_ALL)
 
-
 if __name__ == "__main__":
     # run_once_per_week(update_data)
     # os.system("clear")
     # main()
-    lessons = load_data()
-
-    visualize(lessons)
+    print(f"{MOVED_MODYFIER['base']}test{END_MODIFIER}")
+    print(f"{MOVED_MODYFIER['number']}test2{END_MODIFIER}")

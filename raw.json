@@ -398,7 +398,12 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": null,
+    "Change": {
+      "Id": 176590,
+      "Type": 1,
+      "IsMerge": false,
+      "Separation": false
+    },
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -408,7 +413,58 @@
     "Distribution": null,
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": null,
+    "Substitution": {
+      "Id": 176590,
+      "UnitId": 3,
+      "ScheduleId": 3980436,
+      "LessonDate": {
+        "Timestamp": 1764198000000,
+        "Date": "2025-11-27",
+        "DateDisplay": "27.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-27",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": null,
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": null,
+      "Subject": null,
+      "TeacherPrimary": null,
+      "TeacherAbsenceReasonId": 13,
+      "TeacherAbsenceEffectName": "Uczniowie przychodzą później",
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 176590,
+        "Type": 1,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": null,
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1764172715983,
+        "Date": "2025-11-26",
+        "DateDisplay": "26.11.2025",
+        "Time": "16:58:35"
+      },
+      "ModifiedAt": "2025-11-26T16:58:35.9830000+01:00",
+      "Description": null
+    },
     "Parent": null
   },
   {
@@ -554,7 +610,12 @@
     },
     "TeacherSecondary": null,
     "TeacherSecondary2": null,
-    "Change": null,
+    "Change": {
+      "Id": 176597,
+      "Type": 2,
+      "IsMerge": false,
+      "Separation": false
+    },
     "Clazz": {
       "Id": 790,
       "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
@@ -564,7 +625,69 @@
     "Distribution": null,
     "PupilAlias": null,
     "Visible": true,
-    "Substitution": null,
+    "Substitution": {
+      "Id": 176597,
+      "UnitId": 3,
+      "ScheduleId": 3980439,
+      "LessonDate": {
+        "Timestamp": 1764198000000,
+        "Date": "2025-11-27",
+        "DateDisplay": "27.11.2025",
+        "Time": "00:00:00"
+      },
+      "DateAt": "2025-11-27",
+      "ChangeDate": null,
+      "ChangeDateAt": null,
+      "PupilNote": "",
+      "Reason": null,
+      "Event": null,
+      "Room": null,
+      "TimeSlot": null,
+      "Subject": null,
+      "TeacherPrimary": {
+        "Id": 300,
+        "Surname": "Prośniak",
+        "Name": "Anna",
+        "DisplayName": "Anna Prośniak"
+      },
+      "TeacherAbsenceReasonId": 13,
+      "TeacherAbsenceEffectName": "Złączenie grup",
+      "TeacherSecondary": null,
+      "TeacherSecondaryAbsenceReasonId": null,
+      "TeacherSecondaryAbsenceEffectName": null,
+      "TeacherSecondary2": null,
+      "TeacherSecondary2AbsenceReasonId": null,
+      "TeacherSecondary2AbsenceEffectName": null,
+      "Change": {
+        "Id": 176597,
+        "Type": 2,
+        "IsMerge": false,
+        "Separation": false
+      },
+      "Clazz": {
+        "Id": 790,
+        "Key": "6d5eb2b4-0361-4997-b49d-d840b851f2a8",
+        "DisplayName": "1TPI",
+        "Symbol": "TPI"
+      },
+      "Distribution": {
+        "Id": 2842,
+        "Key": "c4d4842b-c235-49b5-8f12-d97485f7eb89",
+        "Shortcut": "PROG",
+        "Name": "Programista",
+        "PartType": "kryterium"
+      },
+      "ClassAbsence": false,
+      "NoRoom": false,
+      "DateModified": {
+        "Timestamp": 1764172715983,
+        "Date": "2025-11-26",
+        "DateDisplay": "26.11.2025",
+        "Time": "16:58:35"
+      },
+      "ModifiedAt": "2025-11-26T16:58:35.9830000+01:00",
+      "Description": null
+    },
     "Parent": null
   },
   {
