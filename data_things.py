@@ -8,7 +8,7 @@ from jsontype import (
     SingleProcessedLesson,
     Lessons,
 )
-from typing import Literal
+from typing import Literal, cast
 
 
 def load_data() -> RawData:
@@ -40,8 +40,8 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         start_time = raw_lesson["TimeSlot"]["Start"]
         end_time = raw_lesson["TimeSlot"]["End"]
         display_time = raw_lesson["TimeSlot"]["Display"]
-        date = raw_lesson["DateAt"]
         number = raw_lesson["TimeSlot"]["Position"]
+        date = raw_lesson["DateAt"]
         if raw_lesson["Room"] is not None:
             room = raw_lesson["Room"]["Code"]
     if change == 1:
@@ -49,17 +49,28 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         start_time = raw_lesson["TimeSlot"]["Start"]
         end_time = raw_lesson["TimeSlot"]["End"]
         display_time = raw_lesson["TimeSlot"]["Display"]
-        date = raw_lesson["DateAt"]
         number = raw_lesson["TimeSlot"]["Position"]
+        date = raw_lesson["DateAt"]
         if raw_lesson["Room"] is not None:
             room = raw_lesson["Room"]["Code"]
+    if change == 2:
+        lesson = raw_lesson["Subject"]["Name"]
+        start_time = raw_lesson["TimeSlot"]["Start"]
+        end_time = raw_lesson["TimeSlot"]["End"]
+        display_time = raw_lesson["TimeSlot"]["Display"]
+        number = raw_lesson["TimeSlot"]["Position"]
+        date = raw_lesson["DateAt"]
+        if raw_lesson["Room"] is not None:
+            room = raw_lesson["Room"]["Code"]
+
     if change == 3:
         lesson = raw_lesson["Subject"]["Name"]
-        start_time = raw_lesson["Substitution"]["TimeSlot"]["Start"]
-        end_time = raw_lesson["Substitution"]["TimeSlot"]["End"]
-        display_time = raw_lesson["Substitution"]["TimeSlot"]["Display"]
+        if raw_lesson["Substitution"]["TimeSlot"] is not None:
+            start_time = raw_lesson["Substitution"]["TimeSlot"]["Start"]
+            end_time = raw_lesson["Substitution"]["TimeSlot"]["End"]
+            display_time = raw_lesson["Substitution"]["TimeSlot"]["Display"]
+            number = raw_lesson["Substitution"]["TimeSlot"]["Position"]
         date = raw_lesson["Substitution"]["DateAt"]
-        number = raw_lesson["Substitution"]["TimeSlot"]["Position"]
         if raw_lesson["Substitution"]["Room"] is not None:
             room = raw_lesson["Substitution"]["Room"]["Code"]
 

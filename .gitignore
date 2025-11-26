@@ -4,3 +4,5 @@ package-lock.json
 node_modules
 package.json
 token.txt
+lessons.json
+raw_data.json
