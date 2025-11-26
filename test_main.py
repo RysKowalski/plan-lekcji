@@ -1,7 +1,7 @@
 import json
 import os
 from colorama import Back, Fore, Style
-from typing import Literal
+from typing import Literal, cast
 from datetime import datetime, time
 from jsontype import Colors, Lessons, ProcessedLessons, SortedProcessedLessons
 from run_periodic import run_once_per_week
@@ -68,7 +68,7 @@ DELETE_MODYFIER: Colors = {
     "room": f"{Style.DIM}{Back.RED}",
     "time": f"{Style.DIM}{Back.RED}",
 }
-MOVED_MODYFIER: Colors = {
+CHANGED_MODYFIER: Colors = {
     "base": rgb((255, 0, 0), (133, 216, 217)),
     "lesson": rgb((255, 0, 0), (133, 216, 217)),
     "naglowek": rgb((255, 0, 0), (133, 216, 217)),
@@ -163,10 +163,10 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
 
 def visualize(
     plan: SortedProcessedLessons,
-    base_colors: Colors,
-    highlight_colors: Colors,
-    deleted_colors: Colors,
-    moved_colors: Colors,
+    base_colors: Colors = BASE_COLORS,
+    highlight_colors: Colors = HIGHTLIGHT_COLORS,
+    deleted_colors: Colors = DELETE_MODYFIER,
+    moved_colors: Colors = CHANGED_MODYFIER,
 ):
     current_day: WeekDays = get_current_weekday()
 
@@ -182,11 +182,16 @@ def visualize(
     separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
 
     for day in plan.keys():
+        print(DAYS[cast(WeekDays, day)])
         print(separator)
         print(
             f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
         )
         print(separator)
+        for lesson in plan[day]:
+            ...
+
+        print()
 
 
 # def main():
@@ -205,5 +210,5 @@ if __name__ == "__main__":
     # run_once_per_week(update_data)
     # os.system("clear")
     # main()
-    print(f"{MOVED_MODYFIER['base']}test{END_MODIFIER}")
-    print(f"{MOVED_MODYFIER['number']}test2{END_MODIFIER}")
+    plan = load_data()
+    visualize(plan)
