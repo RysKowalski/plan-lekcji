@@ -40,7 +40,7 @@ def rgb(
     return f"\033[38;2;{fr};{fg_};{fb}m\033[48;2;{br};{bg_};{bb}m"
 
 
-END_MODIFIER: str = "\033[0m"
+END_MODIFIER: str = "\033[0m]"
 
 BASE_COLORS: Colors = {
     "base": Fore.WHITE,
@@ -170,6 +170,12 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
     print(separator)
 
 
+def merge_colors(colors1: Colors, colors2: Colors):
+    for color in colors1.keys():
+        colors1[color] += colors2[color]
+    return colors1
+
+
 def visualize(
     plan: SortedProcessedLessons,
     base_colors: Colors = BASE_COLORS,
@@ -204,18 +210,45 @@ def visualize(
             END_MODIFIER,
             sep="",
         )
-        print(separator)
+
+        print(f"{colors['base']}{separator}{END_MODIFIER}")
         print(
-            f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
+            f"{colors['base']}| ",
+            f"{colors['number']}{naglowek_numer}",
+            f"{colors['base']} | ",
+            f"{colors['time']}{naglowek_czas}",
+            f"{colors['base']} | ",
+            f"{colors['lesson']}{naglowek_lekcja}",
+            f"{colors['base']} | ",
+            f"{colors['room']}{naglowek_sala}",
+            f"{colors['base']} |{END_MODIFIER}",
+            sep="",
         )
-        print(separator)
+        print(f"{colors['base']}{separator}{END_MODIFIER}")
+
         for lesson in plan[cast(WeekDays, day)]:
-            if get_current_lesson_index() == lesson["number"]:
+            if highlight and get_current_lesson_index() == lesson["number"]:
                 lesson_colors: Colors = highlight_colors
             else:
                 lesson_colors: Colors = colors
-            print(f"| {numer} | {czas} | {lekcja} | {sala} |")
+            print(lesson["change"])
+            if lesson["change"] == 1:
+                lesson_colors = merge_colors(lesson_colors, deleted_colors)
 
+            print(
+                f"{lesson_colors['base']}| ",
+                f"{lesson_colors['number']}{lesson['number']}",
+                f"{lesson_colors['base']} | ",
+                f"{lesson_colors['time']}{lesson['display_time']}",
+                f"{lesson_colors['base']} | ",
+                f"{lesson_colors['lesson']}{lesson['lesson'][:20].ljust(20)}",
+                f"{lesson_colors['base']} | ",
+                f"{lesson_colors['room']} {lesson['room']} ",
+                f"{lesson_colors['base']} |{END_MODIFIER}",
+                sep="",
+            )
+
+        print(f"{colors['base']}{separator}{END_MODIFIER}")
         print()
 
 

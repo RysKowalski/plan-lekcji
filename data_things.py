@@ -1,5 +1,5 @@
 import json
-from datetime import datetime
+from datetime import datetime, date
 import os
 from jsontype import (
     RawData,
@@ -94,9 +94,11 @@ def process_data(raw_data: RawData) -> ProcessedLessons:
 
 
 def sort_lessons(unsorted_lessons: ProcessedLessons) -> Lessons:
+    current_date = date.today()
+    current_year, current_week, _ = current_date.isocalendar()
     sorted_lessons: Lessons = {
         "days": {"po": [], "wt": [], "sr": [], "cz": [], "pi": []},
-        "last_update": str(datetime.now()),
+        "last_update": f"{current_year}-{current_week}",
     }
 
     for lesson in unsorted_lessons:
