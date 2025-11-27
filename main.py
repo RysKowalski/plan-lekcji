@@ -262,23 +262,12 @@ def visualize(
         print()
 
 
-# def main():
-#     plan = load_data()
-#     current_day: WeekDays = get_current_weekday()
-#
-#     for day in DAYS:
-#         highlight: bool = day[0] == current_day
-#         print(Fore.LIGHTYELLOW_EX, day[1], Style.RESET_ALL, sep="")
-#         if highlight:
-#             print(Fore.LIGHTCYAN_EX, end="")
-#         wizualizuj_lekcje(plan[day[0]], highlight)
-#         print(Style.RESET_ALL)
+def main():
+    lessons = load_data()
+    visualize(lessons)
+
 
 if __name__ == "__main__":
-    # run_once_per_week(update_data)
-    # os.system("clear")
-    # main()
-    #
-
-    plan = load_data()
-    visualize(plan)
+    run_once_per_week(update_data)
+    os.system("clear")
+    main()
