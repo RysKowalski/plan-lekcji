@@ -51,13 +51,22 @@ BASE_COLORS: Colors = {
     "time": Fore.WHITE,
 }
 
-HIGHTLIGHT_COLORS: Colors = {
+HIGHTLIGHT_DAY: Colors = {
     "base": Fore.LIGHTCYAN_EX,
     "lesson": Fore.BLUE,
     "naglowek": Fore.LIGHTYELLOW_EX,
     "number": Fore.CYAN,
     "room": Fore.LIGHTGREEN_EX,
     "time": Fore.GREEN,
+}
+
+HIGHTLIGHT_COLORS: Colors = {
+    "base": Fore.LIGHTCYAN_EX,
+    "lesson": Fore.LIGHTCYAN_EX,
+    "naglowek": Fore.LIGHTCYAN_EX,
+    "number": Fore.LIGHTCYAN_EX,
+    "room": Fore.LIGHTCYAN_EX,
+    "time": Fore.LIGHTCYAN_EX,
 }
 
 DELETE_MODYFIER: Colors = {
@@ -167,6 +176,7 @@ def visualize(
     highlight_colors: Colors = HIGHTLIGHT_COLORS,
     deleted_colors: Colors = DELETE_MODYFIER,
     moved_colors: Colors = CHANGED_MODYFIER,
+    hightlight_day: Colors = HIGHTLIGHT_DAY,
 ):
     current_day: WeekDays = get_current_weekday()
 
@@ -182,14 +192,29 @@ def visualize(
     separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
 
     for day in plan.keys():
-        print(DAYS[cast(WeekDays, day)])
+        highlight: bool = day == current_day
+        if highlight:
+            colors: Colors = hightlight_day
+        else:
+            colors: Colors = base_colors
+
+        print(
+            colors["naglowek"],
+            DAYS[cast(WeekDays, day)],
+            END_MODIFIER,
+            sep="",
+        )
         print(separator)
         print(
             f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
         )
         print(separator)
-        for lesson in plan[day]:
-            ...
+        for lesson in plan[cast(WeekDays, day)]:
+            if get_current_lesson_index() == lesson["number"]:
+                lesson_colors: Colors = highlight_colors
+            else:
+                lesson_colors: Colors = colors
+            print(f"| {numer} | {czas} | {lekcja} | {sala} |")
 
         print()
 
