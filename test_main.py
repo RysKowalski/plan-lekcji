@@ -32,15 +32,21 @@ DAYS: dict[WeekDays, str] = {
 
 
 def rgb(
-    fg: tuple[int, int, int],
-    bg: tuple[int, int, int],
+    mode: Literal["fg", "bg", "both"],
+    fg: tuple[int, int, int] = (0, 0, 0),
+    bg: tuple[int, int, int] = (0, 0, 0),
 ) -> str:
     fr, fg_, fb = fg
     br, bg_, bb = bg
-    return f"\033[38;2;{fr};{fg_};{fb}m\033[48;2;{br};{bg_};{bb}m"
+    if mode == "both":
+        return f"\033[38;2;{fr};{fg_};{fb}m\033[48;2;{br};{bg_};{bb}m"
+    elif mode == "fg":
+        return f"\033[38;2;{fr};{fg_};{fb}m"
+    elif mode == "bg":
+        return f"\033[48;2;{br};{bg_};{bb}m"
 
 
-END_MODIFIER: str = "\033[0m]"
+END_MODIFIER: str = "\033[0m"
 
 BASE_COLORS: Colors = {
     "base": Fore.WHITE,
@@ -70,20 +76,20 @@ HIGHTLIGHT_COLORS: Colors = {
 }
 
 DELETE_MODYFIER: Colors = {
-    "base": f"{Style.DIM}{Back.RED}",
-    "lesson": f"{Style.DIM}{Back.RED}",
-    "naglowek": f"{Style.DIM}{Back.RED}",
-    "number": f"{Style.DIM}{Back.RED}",
-    "room": f"{Style.DIM}{Back.RED}",
-    "time": f"{Style.DIM}{Back.RED}",
+    "base": f"{Back.RED}",
+    "lesson": rgb("both", (61, 255, 233), (204, 4, 3)),
+    "naglowek": f"{Back.RED}",
+    "number": f"{Back.RED}",
+    "room": f"{Back.RED}",
+    "time": f"{Back.RED}",
 }
 CHANGED_MODYFIER: Colors = {
-    "base": rgb((255, 0, 0), (133, 216, 217)),
-    "lesson": rgb((255, 0, 0), (133, 216, 217)),
-    "naglowek": rgb((255, 0, 0), (133, 216, 217)),
-    "number": rgb((255, 0, 0), (133, 216, 217)),
-    "room": rgb((255, 0, 0), (133, 216, 217)),
-    "time": rgb((255, 0, 0), (133, 216, 217)),
+    "base": rgb("both", (255, 0, 0), (133, 216, 217)),
+    "lesson": rgb("both", (255, 0, 0), (133, 216, 217)),
+    "naglowek": rgb("both", (255, 0, 0), (133, 216, 217)),
+    "number": rgb("both", (255, 0, 0), (133, 216, 217)),
+    "room": rgb("both", (255, 0, 0), (133, 216, 217)),
+    "time": rgb("both", (255, 0, 0), (133, 216, 217)),
 }
 
 
@@ -171,9 +177,10 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
 
 
 def merge_colors(colors1: Colors, colors2: Colors):
-    for color in colors1.keys():
-        colors1[color] += colors2[color]
-    return colors1
+    new_colors: Colors = colors1.copy()
+    for color in new_colors.keys():
+        new_colors[color] += colors2[color]
+    return new_colors
 
 
 def visualize(
@@ -231,7 +238,6 @@ def visualize(
                 lesson_colors: Colors = highlight_colors
             else:
                 lesson_colors: Colors = colors
-            print(lesson["change"])
             if lesson["change"] == 1:
                 lesson_colors = merge_colors(lesson_colors, deleted_colors)
 
@@ -268,5 +274,7 @@ if __name__ == "__main__":
     # run_once_per_week(update_data)
     # os.system("clear")
     # main()
+    #
+
     plan = load_data()
     visualize(plan)
