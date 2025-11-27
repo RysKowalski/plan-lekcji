@@ -83,13 +83,15 @@ DELETE_MODYFIER: Colors = {
     "room": f"{Back.RED}",
     "time": f"{Back.RED}",
 }
+
+_CHANGED_MODYFIER: str = rgb("bg", bg=(4, 81, 105))
 CHANGED_MODYFIER: Colors = {
-    "base": rgb("both", (255, 0, 0), (133, 216, 217)),
-    "lesson": rgb("both", (255, 0, 0), (133, 216, 217)),
-    "naglowek": rgb("both", (255, 0, 0), (133, 216, 217)),
-    "number": rgb("both", (255, 0, 0), (133, 216, 217)),
-    "room": rgb("both", (255, 0, 0), (133, 216, 217)),
-    "time": rgb("both", (255, 0, 0), (133, 216, 217)),
+    "base": _CHANGED_MODYFIER,
+    "lesson": rgb("fg", fg=(0, 255, 37)) + _CHANGED_MODYFIER,
+    "naglowek": _CHANGED_MODYFIER,
+    "number": _CHANGED_MODYFIER,
+    "room": _CHANGED_MODYFIER,
+    "time": _CHANGED_MODYFIER,
 }
 
 
@@ -240,6 +242,8 @@ def visualize(
                 lesson_colors: Colors = colors
             if lesson["change"] == 1:
                 lesson_colors = merge_colors(lesson_colors, deleted_colors)
+            elif lesson["change"] == 2 or lesson["change"] == 3:
+                lesson_colors = merge_colors(lesson_colors, moved_colors)
 
             print(
                 f"{lesson_colors['base']}| ",

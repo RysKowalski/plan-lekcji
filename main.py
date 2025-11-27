@@ -1,9 +1,9 @@
 import json
 import os
-from colorama import Fore, Style
-from typing import Literal
+from colorama import Back, Fore, Style
+from typing import Literal, cast
 from datetime import datetime, time
-from jsontype import Lessons, ProcessedLessons, SortedProcessedLessons
+from jsontype import Colors, Lessons, ProcessedLessons, SortedProcessedLessons
 from run_periodic import run_once_per_week
 from data_things import main as update_data
 
@@ -22,15 +22,77 @@ LESSONS: dict[int, str] = {
 }
 
 
-DAYS: list[tuple[WeekDays, str]] = [
-    ("po", f"{'=' * 17} PONIEDZIAŁEK {'=' * 18}"),
-    ("wt", f"{'=' * 21} WTOREK {'=' * 20}"),
-    ("sr", f"{'=' * 21} ŚRODA {'=' * 21}"),
-    ("cz", f"{'=' * 20} CZWARTEK {'=' * 19}"),
-    ("pi", f"{'=' * 21} PIĄTEK {'=' * 20}"),
-]
+DAYS: dict[WeekDays, str] = {
+    "po": f"{'=' * 17} PONIEDZIAŁEK {'=' * 18}",
+    "wt": f"{'=' * 21} WTOREK {'=' * 20}",
+    "sr": f"{'=' * 21} ŚRODA {'=' * 21}",
+    "cz": f"{'=' * 20} CZWARTEK {'=' * 19}",
+    "pi": f"{'=' * 21} PIĄTEK {'=' * 20}",
+}
 
-ALL_DAYS: list[WeekDays] = ["po", "wt", "sr", "cz", "pi"]
+
+def rgb(
+    mode: Literal["fg", "bg", "both"],
+    fg: tuple[int, int, int] = (0, 0, 0),
+    bg: tuple[int, int, int] = (0, 0, 0),
+) -> str:
+    fr, fg_, fb = fg
+    br, bg_, bb = bg
+    if mode == "both":
+        return f"\033[38;2;{fr};{fg_};{fb}m\033[48;2;{br};{bg_};{bb}m"
+    elif mode == "fg":
+        return f"\033[38;2;{fr};{fg_};{fb}m"
+    elif mode == "bg":
+        return f"\033[48;2;{br};{bg_};{bb}m"
+
+
+END_MODIFIER: str = "\033[0m"
+
+BASE_COLORS: Colors = {
+    "base": Fore.WHITE,
+    "lesson": Fore.WHITE,
+    "naglowek": Fore.YELLOW,
+    "number": Fore.WHITE,
+    "room": Fore.WHITE,
+    "time": Fore.WHITE,
+}
+
+HIGHTLIGHT_DAY: Colors = {
+    "base": Fore.LIGHTCYAN_EX,
+    "lesson": Fore.BLUE,
+    "naglowek": Fore.LIGHTYELLOW_EX,
+    "number": Fore.CYAN,
+    "room": Fore.LIGHTGREEN_EX,
+    "time": Fore.GREEN,
+}
+
+HIGHTLIGHT_COLORS: Colors = {
+    "base": Fore.LIGHTCYAN_EX,
+    "lesson": Fore.LIGHTCYAN_EX,
+    "naglowek": Fore.LIGHTCYAN_EX,
+    "number": Fore.LIGHTCYAN_EX,
+    "room": Fore.LIGHTCYAN_EX,
+    "time": Fore.LIGHTCYAN_EX,
+}
+
+DELETE_MODYFIER: Colors = {
+    "base": f"{Back.RED}",
+    "lesson": rgb("both", (61, 255, 233), (204, 4, 3)),
+    "naglowek": f"{Back.RED}",
+    "number": f"{Back.RED}",
+    "room": f"{Back.RED}",
+    "time": f"{Back.RED}",
+}
+
+_CHANGED_MODYFIER: str = rgb("bg", bg=(4, 81, 105))
+CHANGED_MODYFIER: Colors = {
+    "base": _CHANGED_MODYFIER,
+    "lesson": rgb("fg", fg=(0, 255, 37)) + _CHANGED_MODYFIER,
+    "naglowek": _CHANGED_MODYFIER,
+    "number": _CHANGED_MODYFIER,
+    "room": _CHANGED_MODYFIER,
+    "time": _CHANGED_MODYFIER,
+}
 
 
 def get_current_lesson_index() -> int:
@@ -58,7 +120,7 @@ def get_current_lesson_index() -> int:
 
 def get_current_weekday() -> WeekDays:
     day = datetime.today().weekday()
-    return ALL_DAYS[day]
+    return list(DAYS.keys())[day]
 
 
 def load_data() -> SortedProcessedLessons:
@@ -116,17 +178,20 @@ def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
     print(separator)
 
 
+def merge_colors(colors1: Colors, colors2: Colors):
+    new_colors: Colors = colors1.copy()
+    for color in new_colors.keys():
+        new_colors[color] += colors2[color]
+    return new_colors
+
+
 def visualize(
     plan: SortedProcessedLessons,
-    day_color: str = Fore.LIGHTYELLOW_EX,
-    base_color: str = Fore.WHITE,
-    highlight_current_day_base: str = Fore.LIGHTRED_EX,
-    highlight_base_color: str = Fore.LIGHTCYAN_EX,
-    hightlight_naglowek_color: str = Fore.WHITE,
-    highlight_number_color: str = Fore.BLUE,
-    highlight_time_color: str = Fore.GREEN,
-    highlight_lesson_color: str = Fore.BLUE,
-    highlight_room_color: str = Fore.GREEN,
+    base_colors: Colors = BASE_COLORS,
+    highlight_colors: Colors = HIGHTLIGHT_COLORS,
+    deleted_colors: Colors = DELETE_MODYFIER,
+    moved_colors: Colors = CHANGED_MODYFIER,
+    hightlight_day: Colors = HIGHTLIGHT_DAY,
 ):
     current_day: WeekDays = get_current_weekday()
 
@@ -142,29 +207,78 @@ def visualize(
     separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
 
     for day in plan.keys():
-        print(separator)
-        print(
-            f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
-        )
-        print(separator)
-
-
-def main():
-    plan = load_data()
-    current_day: WeekDays = get_current_weekday()
-
-    for day in DAYS:
-        highlight: bool = day[0] == current_day
-        print(Fore.LIGHTYELLOW_EX, day[1], Style.RESET_ALL, sep="")
+        highlight: bool = day == current_day
         if highlight:
-            print(Fore.LIGHTCYAN_EX, end="")
-        wizualizuj_lekcje(plan[day[0]], highlight)
-        print(Style.RESET_ALL)
+            colors: Colors = hightlight_day
+        else:
+            colors: Colors = base_colors
 
+        print(
+            colors["naglowek"],
+            DAYS[cast(WeekDays, day)],
+            END_MODIFIER,
+            sep="",
+        )
+
+        print(f"{colors['base']}{separator}{END_MODIFIER}")
+        print(
+            f"{colors['base']}| ",
+            f"{colors['number']}{naglowek_numer}",
+            f"{colors['base']} | ",
+            f"{colors['time']}{naglowek_czas}",
+            f"{colors['base']} | ",
+            f"{colors['lesson']}{naglowek_lekcja}",
+            f"{colors['base']} | ",
+            f"{colors['room']}{naglowek_sala}",
+            f"{colors['base']} |{END_MODIFIER}",
+            sep="",
+        )
+        print(f"{colors['base']}{separator}{END_MODIFIER}")
+
+        for lesson in plan[cast(WeekDays, day)]:
+            if highlight and get_current_lesson_index() == lesson["number"]:
+                lesson_colors: Colors = highlight_colors
+            else:
+                lesson_colors: Colors = colors
+            if lesson["change"] == 1:
+                lesson_colors = merge_colors(lesson_colors, deleted_colors)
+            elif lesson["change"] == 2 or lesson["change"] == 3:
+                lesson_colors = merge_colors(lesson_colors, moved_colors)
+
+            print(
+                f"{lesson_colors['base']}| ",
+                f"{lesson_colors['number']}{lesson['number']}",
+                f"{lesson_colors['base']} | ",
+                f"{lesson_colors['time']}{lesson['display_time']}",
+                f"{lesson_colors['base']} | ",
+                f"{lesson_colors['lesson']}{lesson['lesson'][:20].ljust(20)}",
+                f"{lesson_colors['base']} | ",
+                f"{lesson_colors['room']} {lesson['room']} ",
+                f"{lesson_colors['base']} |{END_MODIFIER}",
+                sep="",
+            )
+
+        print(f"{colors['base']}{separator}{END_MODIFIER}")
+        print()
+
+
+# def main():
+#     plan = load_data()
+#     current_day: WeekDays = get_current_weekday()
+#
+#     for day in DAYS:
+#         highlight: bool = day[0] == current_day
+#         print(Fore.LIGHTYELLOW_EX, day[1], Style.RESET_ALL, sep="")
+#         if highlight:
+#             print(Fore.LIGHTCYAN_EX, end="")
+#         wizualizuj_lekcje(plan[day[0]], highlight)
+#         print(Style.RESET_ALL)
 
 if __name__ == "__main__":
-    run_once_per_week(update_data)
-    os.system("clear")
-    main()
-    # lessons = load_data()
-    # visualize(lessons)
+    # run_once_per_week(update_data)
+    # os.system("clear")
+    # main()
+    #
+
+    plan = load_data()
+    visualize(plan)
