@@ -68,13 +68,14 @@ HIGHTLIGHT_DAY: Colors = {
     "time": Fore.GREEN,
 }
 
+_HIGHTLIGHT_COLORS: str = rgb("both", (0, 255, 255), (0, 99, 0))
 HIGHTLIGHT_COLORS: Colors = {
-    "base": Fore.LIGHTCYAN_EX,
-    "lesson": Fore.LIGHTCYAN_EX,
-    "naglowek": Fore.LIGHTCYAN_EX,
-    "number": Fore.LIGHTCYAN_EX,
-    "room": Fore.LIGHTCYAN_EX,
-    "time": Fore.LIGHTCYAN_EX,
+    "base": _HIGHTLIGHT_COLORS,
+    "lesson": _HIGHTLIGHT_COLORS,
+    "naglowek": _HIGHTLIGHT_COLORS,
+    "number": _HIGHTLIGHT_COLORS,
+    "room": _HIGHTLIGHT_COLORS,
+    "time": _HIGHTLIGHT_COLORS,
 }
 
 DELETE_MODYFIER: Colors = {
