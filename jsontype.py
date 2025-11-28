@@ -76,7 +76,7 @@ class Substitution(TypedDict):
     Subject: Optional[Subject]
     TeacherPrimary: Optional[Teacher]
     TeacherAbsenceReasonId: Optional[int]
-    TeacherAbsenceEffectName: Optional[str]
+    TeacherAbsenceEffectName: str
     TeacherSecondary: Optional[Teacher]
     TeacherSecondaryAbsenceReasonId: Optional[int]
     TeacherSecondaryAbsenceEffectName: Optional[str]
@@ -122,7 +122,8 @@ class SingleProcessedLesson(TypedDict):
     end_time: HH:MM
     display_time: HH:MM-HH:MM
     room: 2 letter class code, default 00
-    change: 0: no change; 1: substitution; 2: deleted
+    change: 0: no change; 1: substitution; 2: deleted; 3: moved
+    change_reason: str
     date: RRRR-MM-DD
     """
 
@@ -133,6 +134,7 @@ class SingleProcessedLesson(TypedDict):
     display_time: str
     room: str
     change: int
+    change_reason: str
     date: str
 
 

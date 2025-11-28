@@ -131,6 +131,10 @@ def load_data() -> SortedProcessedLessons:
     return data["days"]
 
 
+def get_terminal_width() -> int:
+    return os.get_terminal_size().columns
+
+
 def merge_colors(colors1: Colors, colors2: Colors):
     new_colors: Colors = colors1.copy()
     for color in new_colors.keys():
@@ -158,6 +162,10 @@ def visualize(
     naglowek_sala = "SALA"
     naglowek_numer = "N"
     separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
+
+    plan_width: int = len(separator)
+    term_width: int = get_terminal_width()
+    change_reason_width: int = term_width - plan_width - 1
 
     for day in plan.keys():
         highlight: bool = day == current_day
@@ -208,6 +216,7 @@ def visualize(
                 f"{lesson_colors['base']} | ",
                 f"{lesson_colors['room']} {lesson['room']} ",
                 f"{lesson_colors['base']} |{END_MODIFIER}",
+                f" {lesson['change_reason'][:change_reason_width]}",
                 sep="",
             )
 

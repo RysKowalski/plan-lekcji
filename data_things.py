@@ -8,7 +8,7 @@ from jsontype import (
     SingleProcessedLesson,
     Lessons,
 )
-from typing import Literal, cast
+from typing import Literal
 
 
 def load_data() -> RawData:
@@ -34,6 +34,7 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
     display_time: str = "01:01-01:02"
     room: str = "00"
     date: str = "2025-01-01"
+    change_reason: str = ""
 
     if change == 0:
         lesson = raw_lesson["Subject"]["Name"]
@@ -51,6 +52,8 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         display_time = raw_lesson["TimeSlot"]["Display"]
         number = raw_lesson["TimeSlot"]["Position"]
         date = raw_lesson["DateAt"]
+        if raw_lesson["Substitution"] is not None:
+            change_reason = raw_lesson["Substitution"]["TeacherAbsenceEffectName"]
         if raw_lesson["Room"] is not None:
             room = raw_lesson["Room"]["Code"]
     if change == 2:
@@ -60,6 +63,8 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         display_time = raw_lesson["TimeSlot"]["Display"]
         number = raw_lesson["TimeSlot"]["Position"]
         date = raw_lesson["DateAt"]
+        if raw_lesson["Substitution"] is not None:
+            change_reason = raw_lesson["Substitution"]["TeacherAbsenceEffectName"]
         if raw_lesson["Room"] is not None:
             room = raw_lesson["Room"]["Code"]
 
@@ -71,6 +76,9 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
             display_time = raw_lesson["Substitution"]["TimeSlot"]["Display"]
             number = raw_lesson["Substitution"]["TimeSlot"]["Position"]
         date = raw_lesson["Substitution"]["DateAt"]
+        if raw_lesson["Substitution"] is not None:
+            if raw_lesson["Substitution"]["TeacherAbsenceEffectName"] is not None:
+                change_reason = raw_lesson["Substitution"]["TeacherAbsenceEffectName"]
         if raw_lesson["Substitution"]["Room"] is not None:
             room = raw_lesson["Substitution"]["Room"]["Code"]
 
@@ -82,6 +90,7 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         "display_time": display_time,
         "room": room,
         "change": change,
+        "change_reason": change_reason,
         "date": date,
     }
 

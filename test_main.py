@@ -1,11 +1,13 @@
 import json
 import os
-from colorama import Back, Fore, Style
-from typing import Literal, cast
 from datetime import datetime, time
-from jsontype import Colors, Lessons, ProcessedLessons, SortedProcessedLessons
-from run_periodic import run_once_per_week
+from typing import Literal, cast
+
+from colorama import Back, Fore
+
 from data_things import main as update_data
+from jsontype import Colors, Lessons, SortedProcessedLessons
+from run_periodic import run_once_per_week
 
 WeekDays = Literal["po", "wt", "sr", "cz", "pi"]
 
@@ -129,53 +131,8 @@ def load_data() -> SortedProcessedLessons:
     return data["days"]
 
 
-def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
-    if not plan:
-        print("Brak lekcji do wyświetlenia.")
-        return
-
-    szer_czas = 11
-    szer_lekcja = 20
-    szer_sala = 4
-    szer_numer = 1
-
-    naglowek_czas = "CZAS".ljust(szer_czas)
-    naglowek_lekcja = "LEKCJA".ljust(szer_lekcja)
-    naglowek_sala = "SALA"
-    naglowek_numer = "N"
-    separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
-
-    print(separator)
-    print(
-        f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
-    )
-    print(separator)
-
-    sorted_plan: ProcessedLessons = sorted(plan, key=lambda x: x["number"])
-    for elem in sorted_plan:
-        czas = elem["display_time"]
-        lekcja = elem["lesson"][:20].ljust(szer_lekcja)
-        sala = f" {elem['room']}".ljust(4)
-        numer = elem["number"]
-        if elem["change"] == 1:
-            print(Fore.RED, end="")
-        if highlight and get_current_lesson_index() == elem["number"]:
-            if elem["change"] == 1:
-                print(
-                    f"{Fore.RED}| {numer} | {Fore.GREEN}{czas}{Fore.RED} | {lekcja} | {sala} |{Fore.LIGHTCYAN_EX}"
-                )
-            else:
-                print(
-                    f"{Fore.LIGHTRED_EX}| {Fore.BLUE}{numer}{Fore.LIGHTRED_EX} | {Fore.GREEN}{czas}{Fore.LIGHTRED_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTRED_EX} | {Fore.GREEN}{sala}{Fore.LIGHTRED_EX} |{Fore.LIGHTCYAN_EX}"
-                )
-        else:
-            print(f"| {numer} | {czas} | {lekcja} | {sala} |")
-        if elem["change"] == 1:
-            if highlight:
-                print(Fore.LIGHTCYAN_EX, end="")
-            else:
-                print(Style.RESET_ALL, end="")
-    print(separator)
+def get_terminal_width() -> int:
+    return os.get_terminal_size().columns
 
 
 def merge_colors(colors1: Colors, colors2: Colors):
@@ -205,6 +162,10 @@ def visualize(
     naglowek_sala = "SALA"
     naglowek_numer = "N"
     separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
+
+    plan_width: int = len(separator)
+    term_width: int = get_terminal_width()
+    change_reason_width: int = term_width - plan_width - 1
 
     for day in plan.keys():
         highlight: bool = day == current_day
@@ -255,6 +216,7 @@ def visualize(
                 f"{lesson_colors['base']} | ",
                 f"{lesson_colors['room']} {lesson['room']} ",
                 f"{lesson_colors['base']} |{END_MODIFIER}",
+                f" {lesson['change_reason'][:change_reason_width]}",
                 sep="",
             )
 
@@ -262,23 +224,12 @@ def visualize(
         print()
 
 
-# def main():
-#     plan = load_data()
-#     current_day: WeekDays = get_current_weekday()
-#
-#     for day in DAYS:
-#         highlight: bool = day[0] == current_day
-#         print(Fore.LIGHTYELLOW_EX, day[1], Style.RESET_ALL, sep="")
-#         if highlight:
-#             print(Fore.LIGHTCYAN_EX, end="")
-#         wizualizuj_lekcje(plan[day[0]], highlight)
-#         print(Style.RESET_ALL)
+def main():
+    lessons = load_data()
+    visualize(lessons)
+
 
 if __name__ == "__main__":
-    # run_once_per_week(update_data)
-    # os.system("clear")
-    # main()
-    #
-
-    plan = load_data()
-    visualize(plan)
+    run_once_per_week(update_data)
+    os.system("clear")
+    main()
