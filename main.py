@@ -129,55 +129,6 @@ def load_data() -> SortedProcessedLessons:
     return data["days"]
 
 
-def wizualizuj_lekcje(plan: ProcessedLessons, highlight: bool = False) -> None:
-    if not plan:
-        print("Brak lekcji do wyświetlenia.")
-        return
-
-    szer_czas = 11
-    szer_lekcja = 20
-    szer_sala = 4
-    szer_numer = 1
-
-    naglowek_czas = "CZAS".ljust(szer_czas)
-    naglowek_lekcja = "LEKCJA".ljust(szer_lekcja)
-    naglowek_sala = "SALA"
-    naglowek_numer = "N"
-    separator = f"+{'-' * (szer_numer + 2)}+{'-' * (szer_czas + 2)}+{'-' * (szer_lekcja + 2)}+{'-' * (szer_sala + 2)}+"
-
-    print(separator)
-    print(
-        f"| {naglowek_numer} | {naglowek_czas} | {naglowek_lekcja} | {naglowek_sala} |"
-    )
-    print(separator)
-
-    sorted_plan: ProcessedLessons = sorted(plan, key=lambda x: x["number"])
-    for elem in sorted_plan:
-        czas = elem["display_time"]
-        lekcja = elem["lesson"][:20].ljust(szer_lekcja)
-        sala = f" {elem['room']}".ljust(4)
-        numer = elem["number"]
-        if elem["change"] == 1:
-            print(Fore.RED, end="")
-        if highlight and get_current_lesson_index() == elem["number"]:
-            if elem["change"] == 1:
-                print(
-                    f"{Fore.RED}| {numer} | {Fore.GREEN}{czas}{Fore.RED} | {lekcja} | {sala} |{Fore.LIGHTCYAN_EX}"
-                )
-            else:
-                print(
-                    f"{Fore.LIGHTRED_EX}| {Fore.BLUE}{numer}{Fore.LIGHTRED_EX} | {Fore.GREEN}{czas}{Fore.LIGHTRED_EX} | {Fore.BLUE}{lekcja}{Fore.LIGHTRED_EX} | {Fore.GREEN}{sala}{Fore.LIGHTRED_EX} |{Fore.LIGHTCYAN_EX}"
-                )
-        else:
-            print(f"| {numer} | {czas} | {lekcja} | {sala} |")
-        if elem["change"] == 1:
-            if highlight:
-                print(Fore.LIGHTCYAN_EX, end="")
-            else:
-                print(Style.RESET_ALL, end="")
-    print(separator)
-
-
 def merge_colors(colors1: Colors, colors2: Colors):
     new_colors: Colors = colors1.copy()
     for color in new_colors.keys():
