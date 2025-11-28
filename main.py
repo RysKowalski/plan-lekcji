@@ -1,11 +1,13 @@
 import json
 import os
-from colorama import Back, Fore, Style
-from typing import Literal, cast
 from datetime import datetime, time
-from jsontype import Colors, Lessons, ProcessedLessons, SortedProcessedLessons
-from run_periodic import run_once_per_week
+from typing import Literal, cast
+
+from colorama import Back, Fore
+
 from data_things import main as update_data
+from jsontype import Colors, Lessons, SortedProcessedLessons
+from run_periodic import run_once_per_week
 
 WeekDays = Literal["po", "wt", "sr", "cz", "pi"]
 
