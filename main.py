@@ -9,7 +9,7 @@ from data_things import main as update_data
 from jsontype import Colors, Lessons, SortedProcessedLessons
 from run_periodic import run_once_per_week
 
-WeekDays = Literal["po", "wt", "sr", "cz", "pi"]
+WeekDays = Literal["po", "wt", "sr", "cz", "pi", "so", "ni"]
 
 LESSONS: dict[int, str] = {
     1: "08:00-08:45",
@@ -30,6 +30,8 @@ DAYS: dict[WeekDays, str] = {
     "sr": f"{'=' * 21} ŚRODA {'=' * 21}",
     "cz": f"{'=' * 20} CZWARTEK {'=' * 19}",
     "pi": f"{'=' * 21} PIĄTEK {'=' * 20}",
+    "so": "",
+    "ni": "",
 }
 
 
