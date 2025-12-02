@@ -2,12 +2,12 @@ from datetime import date
 from typing import Callable
 import json
 
-from jsontype import SortedProcessedLessons
+from jsontype import Lessons
 
 
 def load_last_week() -> tuple[int, int] | None:
     with open("lessons.json", "r") as file:
-        file_data: SortedProcessedLessons = json.load(file)
+        file_data: Lessons = json.load(file)
     data = file_data["last_update"].strip().split("-")
     if len(data) != 2:
         return None
@@ -21,7 +21,7 @@ def load_last_week() -> tuple[int, int] | None:
 
 def save_last_week(year: int, week: int) -> None:
     with open("lessons.json", "r") as file:
-        data: SortedProcessedLessons = json.load(file)
+        data: Lessons = json.load(file)
     data["last_update"] = f"{year}-{week}"
     with open("lessons.json", "w") as file:
         json.dump(data, file)

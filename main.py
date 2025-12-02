@@ -23,6 +23,13 @@ LESSONS: dict[int, str] = {
     9: "15:30-16:15",
 }
 
+VISIBLE_DAYS: list[Literal["po", "wt", "sr", "cz", "pi"]] = [
+    "po",
+    "wt",
+    "sr",
+    "cz",
+    "pi",
+]
 
 DAYS: dict[WeekDays, str] = {
     "po": f"{'=' * 17} PONIEDZIAŁEK {'=' * 18}",
@@ -170,7 +177,7 @@ def visualize(
     term_width: int = get_terminal_width()
     change_reason_width: int = term_width - plan_width - 1
 
-    for day in plan.keys():
+    for day in VISIBLE_DAYS:
         highlight: bool = day == current_day
         if highlight:
             colors: Colors = hightlight_day
