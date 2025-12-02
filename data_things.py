@@ -106,7 +106,7 @@ def sort_lessons(unsorted_lessons: ProcessedLessons) -> Lessons:
     current_date = date.today()
     current_year, current_week, _ = current_date.isocalendar()
     sorted_lessons: Lessons = {
-        "days": {"po": [], "wt": [], "sr": [], "cz": [], "pi": []},
+        "days": {"po": [], "wt": [], "sr": [], "cz": [], "pi": [], "so": [], "ni": []},
         "last_update": f"{current_year}-{current_week}",
     }
 
