@@ -156,6 +156,8 @@ class SortedProcessedLessons(TypedDict):
     sr: ProcessedLessons
     cz: ProcessedLessons
     pi: ProcessedLessons
+    so: ProcessedLessons
+    ni: ProcessedLessons
 
 
 class Lessons(TypedDict):

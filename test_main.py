@@ -199,7 +199,7 @@ def visualize(
         )
         print(f"{colors['base']}{separator}{END_MODIFIER}")
 
-        for lesson in plan[cast(WeekDays, day)]:
+        for lesson in sorted(plan[cast(WeekDays, day)], key=lambda x: x["number"]):
             if highlight and get_current_lesson_index() == lesson["number"]:
                 lesson_colors: Colors = highlight_colors
             else:
