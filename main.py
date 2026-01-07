@@ -5,7 +5,7 @@ from typing import Literal, cast
 
 from colorama import Back, Fore
 
-from data_things import main as update_data
+from data_things import updateData
 from jsontype import Colors, Lessons, SortedProcessedLessons
 from run_periodic import run_once_per_week
 
@@ -240,6 +240,6 @@ def main():
 
 
 if __name__ == "__main__":
-    run_once_per_week(update_data)
+    run_once_per_week(updateData)
     os.system("clear")
     main()

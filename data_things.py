@@ -1,6 +1,7 @@
 import json
 from datetime import datetime, date
 import os
+import sys
 from jsontype import (
     RawData,
     SingleLesson,
@@ -121,10 +122,11 @@ def save_lessons(lessons: Lessons):
         json.dump(lessons, file)
 
 
-def main():
-    os.system("cd js_stuff && node main.js")
+def updateData(week: int = 0):
+    os.system(f"cd js_stuff && node main.js {week}")
     save_lessons(sort_lessons(process_data(load_data())))
 
 
 if __name__ == "__main__":
-    main()
+    week: int = int(sys.argv[1])
+    updateData(week)

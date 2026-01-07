@@ -6,6 +6,9 @@ const fs = require('fs');
 
 const APIAP = fs.readFileSync('token.txt', 'utf8')
 async function main() {
+
+  modifierDays = Number(process.argv[2]) * 7
+
   // 2) generate keypair
   const kpManager = new Keypair();
   const keypair = await kpManager.init();
@@ -39,11 +42,11 @@ async function main() {
   const day = now.getDay() === 0 ? 7 : now.getDay();
 
   const dateFrom = new Date(now);
-  dateFrom.setDate(now.getDate() - (day - 1));
+  dateFrom.setDate(now.getDate() - (day - 1) + modifierDays);
   dateFrom.setHours(0, 0, 0, 0);
 
   const dateTo = new Date(now);
-  dateTo.setDate(now.getDate() + (7 - day));
+  dateTo.setDate(now.getDate() + (7 - day) + modifierDays);
   dateTo.setHours(23, 59, 59, 999);
 
   console.log(dateFrom, dateTo);
