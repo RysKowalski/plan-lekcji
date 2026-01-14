@@ -32,7 +32,6 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
     lesson: str = "None"
     start_time: str = "01:01"
     end_time: str = "01:02"
-    display_time: str = "01:01-01:02"
     room: str = "00"
     date: str = "2025-01-01"
     change_reason: str = ""
@@ -41,7 +40,6 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         lesson = raw_lesson["Subject"]["Name"]
         start_time = raw_lesson["TimeSlot"]["Start"]
         end_time = raw_lesson["TimeSlot"]["End"]
-        display_time = raw_lesson["TimeSlot"]["Display"]
         number = raw_lesson["TimeSlot"]["Position"]
         date = raw_lesson["DateAt"]
         if raw_lesson["Room"] is not None:
@@ -50,7 +48,6 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         lesson = raw_lesson["Subject"]["Name"]
         start_time = raw_lesson["TimeSlot"]["Start"]
         end_time = raw_lesson["TimeSlot"]["End"]
-        display_time = raw_lesson["TimeSlot"]["Display"]
         number = raw_lesson["TimeSlot"]["Position"]
         date = raw_lesson["DateAt"]
         if raw_lesson["Substitution"] is not None:
@@ -61,7 +58,6 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         lesson = raw_lesson["Subject"]["Name"]
         start_time = raw_lesson["TimeSlot"]["Start"]
         end_time = raw_lesson["TimeSlot"]["End"]
-        display_time = raw_lesson["TimeSlot"]["Display"]
         number = raw_lesson["TimeSlot"]["Position"]
         date = raw_lesson["DateAt"]
         if raw_lesson["Substitution"] is not None:
@@ -74,7 +70,6 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         if raw_lesson["Substitution"]["TimeSlot"] is not None:
             start_time = raw_lesson["Substitution"]["TimeSlot"]["Start"]
             end_time = raw_lesson["Substitution"]["TimeSlot"]["End"]
-            display_time = raw_lesson["Substitution"]["TimeSlot"]["Display"]
             number = raw_lesson["Substitution"]["TimeSlot"]["Position"]
         date = raw_lesson["Substitution"]["DateAt"]
         if raw_lesson["Substitution"] is not None:
@@ -88,7 +83,7 @@ def process_lesson(raw_lesson: SingleLesson) -> SingleProcessedLesson:
         "number": number,
         "start_time": start_time,
         "end_time": end_time,
-        "display_time": display_time,
+        "display_time": start_time + " " + end_time,
         "room": room,
         "change": change,
         "change_reason": change_reason,
